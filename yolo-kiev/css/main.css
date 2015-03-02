@@ -46,6 +46,17 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue.eot');
+  src: url('../fonts/BebasNeue.eot') format('embedded-opentype'), url('../fonts/BebasNeue.woff2') format('woff2'), url('../fonts/BebasNeue.woff') format('woff'), url('../fonts/BebasNeue.ttf') format('truetype'), url('../fonts/BebasNeue.svg#BebasNeue') format('svg');
+}
+/* ==========================================================================
+   Author's variables less
+   ========================================================================== */
+/* ==========================================================================
+   Author's mixins less
+========================================================================== */
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -69,6 +80,34 @@ body {
 -----------------------------------------------------------------------------*/
 .header {
   height: 188px;
+}
+.header nav.main-left-menu {
+  float: left;
+  width: 33%;
+}
+.header nav.main-left-menu ul li {
+  float: left;
+}
+.header nav.main-left-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .logo {
+  float: left;
+  width: 33%;
+}
+.header nav.main-right-menu {
+  float: right;
+  width: 33%;
+}
+.header nav.main-right-menu ul li {
+  float: left;
+}
+.header nav.main-right-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 /* Middle
 -----------------------------------------------------------------------------*/
