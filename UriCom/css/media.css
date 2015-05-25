@@ -1,0 +1,207 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.feedback h2 {
+		line-height: 36px;
+		font-size: 28px;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+	.feedback .row-one, .feedback .row-too {
+		font: 14px "opensans";
+		margin: 0;
+	}
+	.feedback p span {
+		font-size: 14px;
+	}
+	.feedback .row-too {
+		margin-bottom: 20px
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.wrap-head-top .col-sm-4 {
+		margin: 0 0 20px 0;
+	}
+	.wrap-head-top .col-sm-4 .logo img {
+		display: block;
+		margin: 0 auto;
+	}
+	.wrap-head-top .col-sm-4 .phone-header {
+		margin: 0;
+	}
+	.wrap-head-top .col-sm-4 .phone-header p {
+		text-align: center;
+	}
+	.wrap-head-top .col-sm-4 .phone-header a {
+		float: none;
+		margin: 0 auto;
+	}
+	.question h1 {
+    	font-size: 45px;
+	}
+	.question .area {
+    	font: 12px/20px "opensanslight";
+	}
+	.question .free {
+    	font: 17px/22px "opensans";
+    	margin-bottom: 20px;
+	}
+	.konsult > p {
+		margin: 0;
+	}
+	.konsult input[type="text"] {
+		margin: 0 21px 20px 0;
+	}
+	.director img {
+	    display: block;
+	    margin-left: 0;
+	    max-width: 100%;
+	}
+	.director-desc {
+	    bottom: -12px;
+	    color: #fff;
+	    left: 64px;
+	    position: absolute;
+	}
+	.service h2, .why h2 {
+	    font-size: 38px;
+	}
+	.service .container .row .col-md-4 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.why {
+    	background: url("../images/bg-why.jpg") repeat-y center top;
+	}
+	.why h3 {
+		margin: 20px 0 0;
+		text-align: center;
+	}
+	.service-1, .service-2, .service-3 {
+	    padding: 137px 0 50px;
+	}
+	.why p {
+		margin-left: 0;
+		text-align: center;
+	}
+	.reviwes h2 {
+		font-size: 38px;
+		margin-left: 0;
+		text-align: center;
+	}
+	.reviwe-img > img {
+	    display: block;
+	    margin: 0 auto;
+	}
+	.name-adress p {
+		text-align: center;
+	}
+	.reviwes .col-md-6 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.reviwe-text {
+		padding: 38px 0 70px 0;
+	}
+	.reviwes .col-md-6:last-child .reviwe-text {
+		padding-bottom: 0;
+	}
+	.feedback h2 {
+		line-height: 36px;
+		font-size: 28px;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+	.feedback .row-one, .feedback .row-too {
+		font: 14px "opensans";
+		margin: 0;
+	}
+	.feedback p span {
+		font-size: 14px;
+	}
+	.feedback .row-too {
+		margin-bottom: 20px;
+	}
+	.about h2 {
+		font-size: 38px;
+	}
+	.soc-nav ul li {
+		margin: 0 20px 0 0;
+	}
+	.soc-nav ul li:last-child {
+		margin: 0;
+	}
+	.wrar-right {
+	    margin-right: 0;
+	    margin-top: 0;
+	    text-align: left;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

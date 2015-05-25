@@ -1,0 +1,373 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Главная страница</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header">
+                <div class="wrap-head clearfix">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="images/logo.png" height="67" width="209" alt="Логотип компании">
+                        </a>
+                    </div>
+                    <div class="head-contact">
+                        <p>+7 (926) 399-87-65</p>
+                        <p>+7 (985) 904-07-41</p>
+                    </div>
+                    <div class="lang">
+                        <a href="#">RU</a>
+                    </div>    
+                </div>
+            </header>
+
+            <div class="middle">
+                <nav class="main_menu">
+                    <ul>
+                        <li><a href="#">ГЛАВНАЯ</a></li>
+                        <li><a href="#">ТАРИФЫ</a></li>
+                        <li><a href="#">ЗАКАЗ</a></li>
+                        <li><a href="#">УСЛОВИЯ</a></li>
+                        <li><a href="#">О КОМПАНИИ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+                <div class="wrap-resaze clearfix">
+                    <div class="container column">
+                        <main class="content">
+                            <h1>Каталог мототехники</h1>
+                            <div class="main-catalog clearfix">
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">Honda Lead af48</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">Honda Giorno</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-3.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">Honda Today</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-4.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">Yamaha BWS 50</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-5.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">SYM Symphony</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-6.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">SYM Jet 4</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-7.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">BMW F700GS</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-8.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">BMW F800GS</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                                <div class="item-wrap">
+                                    <div class="item-img">
+                                        <img src="images/item-img-9.jpg" alt="">
+                                    </div>
+                                    <div class="item-zag">Harley-Davidson Sportster 883</div>
+                                    <div class="item-descr">
+                                        <span>Описание:</span>
+                                        -5000 руб.и документ в залог (документ можно заменить увеличением размера денежного залога до 15000 рублей)<br/>
+                                        -Должно быть 18 лет<br/>
+                                        -Гражданство РФ<br/>
+                                        -Наличие водительских прав (любой категории)
+                                    </div>
+                                    <div class="item-order">
+                                        <a href="#">Заказать</a>
+                                    </div>
+                                </div><!-- .item-wrap -->
+                            </div><!-- .main-catalog -->
+                            <h2>О компании</h2>
+                            <div class="wiziwig">
+                                <p><strong>Техника в отличном состоянии. Своя ремонтная база!</strong></p>
+                                <p>Прокат автомобилей – идеальный вариант в ряде случаев:</p>
+                                <ul>
+                                    <li>Ваша машина в ремонте, а ехать нужно срочно.</li>
+                                    <li>Вы не имеете возможности подстраиваться под график работы общественного транспорта.</li>
+                                    <li>Вы приехали в город на пару дней, а сделать нужно многое, в этом случае решение: «Возьму авто в аренду на сутки», — единственно правильное.</li>
+                                    <li>Вам нужно встретить либо проводить одного или нескольких человек.</li>
+                                    <li>Вам нужен автомобиль экстра-класса для создания имиджа или повышения престижа своей фирмы.</li>
+                                </ul>
+                                <p>Как видите, очень часто автопрокат – это наилучший выход из сложившейся ситуации. Естественно, услуги по прокату легковых автомобилей предлагают многие фирмы, однако, обращаться следует только к достойным организациям, заслужившим доверие клиентов годами безупречной работы. К ним, в частности, относится фирма «rentax», предлагающая автомобильные услуги.</p>
+                            </div>
+                        </main><!-- .content -->
+                    </div><!-- .container-->
+
+                    <aside class="left-sidebar column">
+                        <div class="widget">
+                            <div class="widget-zag">УСЛУГИ ПО ПРОКАТУ МОТОТЕХНИКИ ОТ КОМПАНИИ</div>
+                            <div class="widget-content">
+                                <form action="" method="post">
+                                    <div class="form-row">
+                                        <label for="">Выберите транспортное средство <span>*</span></label>
+                                        <select id="transport">
+                                            <option value="hide"></option>
+                                            <option value="moped1" rel="icon-temperature">Honda Lead af48</option>
+                                            <option value="moped2">Honda Giorno</option>
+                                            <option value="moped3">Honda Today</option>
+                                            <option value="moped4">Yamaha BWS 50</option>
+                                            <option value="moped5">SYM Symphony</option>
+                                            <option value="moped6">SYM Jet 4</option>
+                                            <option value="moped7">BMW F700GS</option>
+                                            <option value="moped8">BMW F800GS</option>
+                                            <option value="moped9">Harley-Davidson Sportster 883</option>
+                                        </select> 
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Срок аренды, с</label>
+                                        <input type="text" name="">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Срок аренды, по</label>
+                                        <input type="text" name="">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Ваше Имя</label>
+                                        <input type="text" name="">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Ваш телефон <span>*</span></label>
+                                        <input type="text" name="">
+                                    </div>
+                                    <div class="form-row">
+                                        <input type="submit" value="Заказать">
+                                        <p>* обязательные поля</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- .widget -->
+                        <div class="widget">
+                            <div class="widget-content">
+                                <nav>
+                                    <ul>
+                                        <li><a href="">Тарифы</a></li>
+                                        <li><a href="">Заказ</a></li>
+                                        <li><a href="">Условия</a></li>
+                                        <li><a href="">О компании</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </nav>    
+                            </div>
+                        </div><!-- .widget -->
+                        <div class="widget">
+                            <div class="widget-zag">Отзывы</div>
+                            <div class="widget-content">
+                                <div class="otziv-wrap">
+                                    <div class="name">Alex</div>
+                                    <div class="date">21.08.2014</div>
+                                    <div class="text">
+                                        Брал в Rentax скутер напрокат. Остался доволен услугой и общей постановкой работы. Техника в очень хорошем состоянии, готовят её как на продажу. За не большие деньги прекрасно отдохнул и получил много позитива. 
+                                        Шлем, перчатки и парковочный тросик - всё идёт в прокатном комплекте, что особенно порадовало. Пришёл, откатался с необходимой экипировкой и поехал домой. Цены низкие, а качество техники на должном уровне. Советую!
+                                    </div>
+                                </div><!-- .otziv-wrap -->
+                                <div class="otziv-wrap">
+                                    <div class="name">Владимир</div>
+                                    <div class="date">21.08.2014</div>
+                                    <div class="text">
+                                        Всем привеееет!!! В прекрасный осенний солнечный день, в субботу 25.10.2014 жизнь дала возможность познакомиться с замечательными ребятами и зарядиться морем положительных эмоций!!!)) Еще раз большое большое спасибо за море положительных эмоций и драйва, приедем еще и не раз!!!)) Юля, Евгений — Вы большие молодцы, так держать!!! Юхуууууу!!!! Хочу еще…))
+                                    </div>
+                                </div><!-- .otziv-wrap -->
+                                <div class="otziv-wrap">
+                                    <div class="name">Илья и Лана</div>
+                                    <div class="date">21.08.2014</div>
+                                    <div class="text">
+                                        Катались с вами 25.10. Очень понравилось, куча впечатлений! Всем рекомендуем и приедем еще!)
+                                    </div>
+                                </div><!-- .otziv-wrap -->
+                                <div class="otziv-wrap">
+                                    <div class="name">Андрей и Мария</div>
+                                    <div class="date">21.08.2014</div>
+                                    <div class="text">
+                                        Всем доброго дня! Катались с вами 09.11.2014 (были на скутерах впервые). Всё очень понравилось! В начале был легкий страх неизведанного, но благодаря ценным искусным советам инструктора Юлии, мастерским действиям инструктора Ивана и всегда неожиданным тропам мы получили массу незабываемых впечатлений и удовольствия! Спасибо большущее за качество, профессионализм, человечность и запечатленные моменты поездки! Отдельное спасибо Евгению за прекрасную организацию — краски жизни после путешествия на скутерах стали ярче :)
+                                    </div>
+                                </div><!-- .otziv-wrap -->
+                                <a class="all-otziv" href="#">Все отзывы</a>
+                            </div>
+                        </div><!-- .widget -->
+                    </aside><!-- .left-sidebar -->
+                </div><!-- .wrap-resaze -->
+                
+    
+            </div><!-- .middle-->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="footer-wrap clearfix">
+                <div class="logo-footer">
+                    <img src="images/logo-footer.png" height="59" width="185" alt="Логотип компании">
+                </div>
+                <nav class="nav-footer">
+                    <ul>                                                                  
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Заказ</a></li>
+                        <li><a href="#">Условия</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="counter">
+                    <img src="images/conter.jpg" height="31" width="88" alt="">
+                </div>   
+            </div>
+            <div class="copy">
+                <p>Copyright Rentax © 2015</p>
+            </div>
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

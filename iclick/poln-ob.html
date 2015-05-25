@@ -1,0 +1,413 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header auth">
+                <div class="head-auth">
+                    <div class="wrap">
+                        <div class="cont-ob">
+                            <p>На сайте 27 355 711 объявлений</p>
+                        </div>
+                        <div class="logo-auth">
+                            <a href="/">
+                                <img src="images/logo-auth.png" height="63" width="174" alt="">
+                            </a>
+                        </div>
+                        <div class="block-links">
+                            <a class="advertising" href="#">Реклама на сайте</a>
+                            <a class="help" href="#">Помощь</a>
+                        </div>
+                        
+                        <div class="main-menu">
+                            <ul>
+                                <li><a class="personal-cab" href="#">Личный кабинет</a></li>
+                                <li><a class="favorites" href="#">Избранное</a></li>
+                                <li><a class="open-shop" href="#">Открой свой магазин</a></li>
+                                <li><a class="add-advertisement" href="#">Подать обьявление</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- .wrap -->    
+                </div><!-- .head-auth -->
+                <div class="wrap-nav-auth">
+                    
+                    <div class="nav-wrap ">
+                        <div class="left-menu">
+                            <ul>
+                                <li><a class="shop-main" href="#">
+                                        <img src="images/telechka.png" height="17" width="17" alt="">
+                                        Магазины
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="my-obya" href="#">
+                                        <img src="images/radaktirov.png" height="15" width="15" alt="">
+                                        Мои обьявления
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/games.png" height="18" width="19" alt="">
+                                        Играй онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/tickets.png" height="20" width="23" alt="">
+                                        Билеты онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/read.png" height="23" width="25" alt="">
+                                        Читай онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/ndvighim.png" alt="">
+                                        Сдавай-Снимай недвижимость онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/auktion.png" height="20" width="29" alt="">
+                                        Аукцион онлайн
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                     
+                    </div><!-- .nav-wrap -->
+                </div>
+            </header><!-- .header-->
+
+            <main class="content">
+                <div class="wrap">
+                    <div class="left-side">
+                        <div class="left-side-zag">Каталог</div>
+                        <div class="menu-akkardeon">
+                            <ul>
+                                <li><a class="active" href="#"><img src="images/ico-cat-auto.png" height="18" width="18" alt="">Транспорт</a>
+                                    <ul>
+                                        <li><a href="#">Автомобили с пробегом</a></li>
+                                        <li><a href="#">Новые автомобили</a></li>
+                                        <li><a href="#">Мотоциклы и мототехника</a></li>
+                                        <li><a href="#">Грузовики и спецтехника</a></li>
+                                        <li><a href="#">Водный транспорт</a></li>
+                                        <li><a href="#">Велосипеды</a></li>
+                                        <li><a href="#">Воздушный транспорт</a></li>
+                                        <li><a href="#">Запчасти и аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/ico-cat-estate.png" height="15" width="16" alt="">Недвижимость</a></li>
+                                <li><a href="#"><img src="images/ico-cat-work.png" height="17" width="20" alt="">Работа</a></li>
+                                <li><a href="#"><img src="images/ico-cat-service.png" height="20" width="20" alt="">Услуги</a></li>
+                                <li><a href="#"><img src="images/ico-cat-personal.png" height="10" width="19" alt="">Личные вещи</a></li>
+                                <li><a href="#"><img src="images/ico-cat-home.png" height="15" width="16" alt="">Для дома и дачи</a></li>
+                                <li><a href="#"><img src="images/ico-cat-business.png" height="16" width="15" alt="">Для бизнеса</a></li>
+                                <li><a href="#"><img src="images/ico-cat-tehnical.png" height="13" width="17" alt="">Бытовая электроника</a></li>
+                                <li><a href="#"><img src="images/ico-cat-rest.png" height="16" width="15" alt="">Отдых и развлечения</a></li>
+                                <li><a href="#"><img src="images/ico-cat-animals.png" height="18" width="12" alt="">Животные</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="search-wrap">
+                            <form action="" method="post">
+                                <input class="search" type="text" name="" placeholder="Найдите обьявление">
+                                <input class="btn-search" type="submit" value="Начать поиск">
+                            </form>
+                        </div>
+                        <div class="banner-top">
+                            <img src="images/banner-top.jpg" height="91" width="795" alt="">
+                        </div>
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="#">Все обьявления в Екатеринбурге</a></li>
+                                <li><a href="#">Транспорт</a></li>
+                                <li><a href="#">Автомобили с пробегом</a></li>
+                                <li><a href="#">BMW</a></li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                        <h1>BMW 3, 2012</h1>
+                        <div class="wrap-polnotext-ob clearfix">
+                            <div class="content-ob">
+                                <div class="wrap-slider-pol-ob">
+                                    <ul class="slider-pol-ob">
+                                        <li>
+                                            <a class="fancy" href="images/bmw-3.jpg">Увеличить</a>
+                                            <img src="images/bmw-3.jpg" height="306" width="503" >
+                                        </li>
+                                        <li>
+                                            <a class="fancy" href="images/bmw-3-2.jpg">Увеличить</a>
+                                            <img src="images/bmw-3-2.jpg" height="306" width="503" >
+                                        </li>
+                                        <li>
+                                            <a class="fancy" href="images/bmw-3-3.jpg">Увеличить</a>
+                                            <img src="images/bmw-3-3.jpg" height="306" width="503" >
+                                        </li>
+                                        <li>
+                                            <a class="fancy" href="images/bmw-3-4.jpg">Увеличить</a>
+                                            <img src="images/bmw-3-4.jpg" height="306" width="503" >
+                                        </li>
+                                        <li>
+                                            <a class="fancy" href="images/bmw-3-5.jpg">Увеличить</a>
+                                            <img src="images/bmw-3-5.jpg" height="306" width="503" >
+                                        </li>
+                                    </ul>
+                                    <div id="bx-pager">
+                                        <a data-slide-index="0" href="#"><img src="images/thumbs/thumbnail.jpg" /></a>
+                                        <a data-slide-index="1" href="#"><img src="images/thumbs/thumbnail-2.jpg" /></a>
+                                        <a data-slide-index="2" href="#"><img src="images/thumbs/thumbnail-3.jpg" /></a>
+                                        <a data-slide-index="3" href="#"><img src="images/thumbs/thumbnail-4.jpg" /></a>
+                                        <a data-slide-index="4" href="#"><img src="images/thumbs/thumbnail-5.jpg" /></a>
+                                    </div>
+                                </div><!-- .wrap-slider-pol-ob -->
+                                <div class="content-ob-text">
+                                    <div class="content-ob-text-row">
+                                        <div class="content-ob-text-col">Арендная плата</div>
+                                        <div class="content-ob-text-col">
+                                            <a class="price-text-col" href="#">1 099 999 руб.</a>
+                                        </div>
+                                    </div>
+                                    <div class="content-ob-text-row">
+                                        <div class="content-ob-text-col">Арендодатель</div>
+                                        <div class="content-ob-text-col">Марина</div>
+                                    </div>
+                                    <div class="content-ob-text-row">
+                                        <div class="content-ob-text-col">Показать телефон</div>
+                                        <div class="content-ob-text-col"></div>
+                                    </div>
+                                    <div class="content-ob-text-row">
+                                        <div class="content-ob-text-col">Город</div>
+                                        <div class="content-ob-text-col">Тюмень</div>
+                                    </div>
+                                    <div class="content-ob-text-row">
+                                        <div class="content-ob-text-col">Адрес</div>
+                                        <div class="content-ob-text-col">Московский тракт</div>
+                                    </div>
+                                    <div class="content-ob-text-row">
+                                        <div class="content-ob-text-col"></div>
+                                        <div class="content-ob-text-col">
+                                            <a class="show-phone" href="#">Показать телефон</a>
+                                        </div>
+                                    </div>
+                                    <div class="content-ob-text-row">
+                                        <p>BMW 3, 2012 г.</br>
+                                        Пробег 40 000 - 44 999 км, 2.0 АТ, бензин, задний привод, седан, левый руль, цвет белый</br>
+                                        Дилерский, состояние нового автомобиля, бережная эксплуатация.</p>
+
+                                        <p>Зимняя резина Run Flat "Hakkapelitta-7" R16.</p>
+
+                                        <p>Один владелец, родной ПТС.</p>
+
+                                        <p>Проведено ТО-2 там же у Официального дилера, имеется отметка.</p>
+
+                                        <p>Продажа в связи с решением жилищного вопроса.</p>
+
+                                        <p>Обмен не интересует.</p>
+
+                                        <p>Цена окончательная, торга нет.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .content-ob -->
+                            <div class="service-ob">
+                                <div class="counter-ob">
+                                    Просмотров: всего 7, сегодня 7
+                                </div>
+                                <div class="service-ob">
+                                    <div class="service-ob-zag">Хотите продать свой товар быстрее?</div>
+                                    <div class="service-ob-content">
+                                        <form action="" method="">
+                                            <div class="service-ob-row premium">
+                                                <input type="checkbox" id="minimal-radio-1" name="">
+                                                <label for="minimal-radio-1">Сделать премиум-объявлением в 5 раз больше просмотров!</label>
+                                            </div>
+                                            <div class="service-ob-row vip">
+                                                <input type="checkbox" id="minimal-radio-2" name="">
+                                                <label for="minimal-radio-2">Сделать VIP-объявлениемв 3 раза больше просмотров!</label>
+                                            </div>
+                                            <div class="service-ob-row fon">
+                                                <input type="checkbox" id="minimal-radio-3" name="">
+                                                <label for="minimal-radio-3">Выделить объявление в 2 раза больше просмотров!</label>
+                                            </div>
+                                            <div class="service-ob-row pick-up">
+                                                <input type="checkbox" id="minimal-radio-4" name="">
+                                                <label for="minimal-radio-4">Поднять объявление в поиске в 2 раза больше просмотров!</label>
+                                            </div>
+                                            <div class="service-ob-row package">
+                                                <input type="checkbox" id="minimal-radio-5" name="">
+                                                <label for="minimal-radio-5">Применить пакет услуг в 20 раз больше просмотров!</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="banner-right">
+                                        <img src="images/banner-right.jpg" height="465" width="273" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .wrap-polnotext-ob -->
+                        <div class="block-links clearfix">
+                            <a class="favorites" href="#">В избранное</a>               
+                            <a class="complain" href="#">Пожаловаться</a>
+                        </div>
+                        <div class="similar-zag">Похожие объявления</div>
+                        <div class="similar-item">
+                            <a href="#">
+                                <div class="similar-img">
+                                    <img src="images/similar-img.jpg" height="114" width="167" alt="">
+                                </div>
+                                <p class="similar-zag-item">
+                                    BMW 3, 2012 г.
+                                </p>
+                                <p>
+                                    Пробег 40 000 - 44 999 км
+                                </p>
+                                <p class="similar-price-item">1 099 999 руб.</p>
+                            </a>
+                        </div>
+                        <div class="similar-item">
+                            <a href="#">
+                                <div class="similar-img">
+                                    <img src="images/similar-img.jpg" height="114" width="167" alt="">
+                                </div>
+                                <p class="similar-zag-item">
+                                    BMW 3, 2012 г.
+                                </p>
+                                <p>
+                                    Пробег 40 000 - 44 999 км
+                                </p>
+                                <p class="similar-price-item">1 099 999 руб.</p>
+                            </a>
+                        </div>
+                        <div class="similar-item">
+                            <a href="#">
+                                <div class="similar-img">
+                                    <img src="images/similar-img.jpg" height="114" width="167" alt="">
+                                </div>
+                                <p class="similar-zag-item">
+                                    BMW 3, 2012 г.
+                                </p>
+                                <p>
+                                    Пробег 40 000 - 44 999 км
+                                </p>
+                                <p class="similar-price-item">1 099 999 руб.</p>
+                            </a>
+                        </div>
+                        <div class="similar-item">
+                            <a href="#">
+                                <div class="similar-img">
+                                    <img src="images/similar-img.jpg" height="114" width="167" alt="">
+                                </div>
+                                <p class="similar-zag-item">
+                                    BMW 3, 2012 г.
+                                </p>
+                                <p>
+                                    Пробег 40 000 - 44 999 км
+                                </p>
+                                <p class="similar-price-item">1 099 999 руб.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main><!-- .content -->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="wrap-footer-nav">
+                <div class="wrap">
+                    <nav class="footer-menu-left">
+                        <ul>                              
+                            <li class="active"><a href="#">История компании</a></li>
+                            <li><a href="#">Реклама на сайте</a></li>
+                            <li><a href="#">Для прессы</a></li>
+                            <li><a href="#">Работа в компании</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Безопасность</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-menu-rigth">
+                        <ul>
+                            <li class="feedback-link"><a href="#">Обратная связь</a></li>
+                            <li class="category-link"><a href="#">Выйти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!-- .wrap-footer-nav -->
+            <div class="wrap-footer">
+                <div class="wrap">
+                    <div class="copy">
+                        © 2014 i Clik.ru   сайт объявлений
+                    </div>
+                    <div class="conter">
+                        <a href="#">
+                            <img src="images/counter.png" height="25" width="26">
+                        </a>
+                    </div>
+                    <div class="created">
+                        <a href="#"><img src="images/created.png" height="26" width="75" alt=""></a>
+                    </div>
+                </div>
+            </div><!-- .wrap-footer -->
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

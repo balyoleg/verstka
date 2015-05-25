@@ -1,0 +1,314 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Главная > WEB-студия OnTop Studio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.gif" height="31" width="31" alt="Логотип WEB-студии">
+                        <span>OnTop Studio</span>
+                        Создание продающих сайтов для бизнеса &#171;под ключ&#187;
+                    </a>
+                </div>
+                <div class="navigition">
+                    <nav>
+                        <ul>
+                            <li><a href="http://ontopstudio.ru/bizness.html">Бизнес сайт</a></li>
+                            <li><a href="http://ontopstudio.ru/landing.html">Landing Page</a></li>
+                            <li><a href="http://ontopstudio.ru/exclusive-site.html">Эксклюзивный сайт</a></li>
+                            <li><a href="#">Привлечение клиентов</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                         <ul>
+                             <li><a href="#">Каталог шаблонов</a></li>
+                             <li><a href="#">Портфолио</a></li>
+                         </ul>
+                     </nav> 
+                </div>
+                
+                <div class="contact-head">
+                    <p class="phone">8-800-775-78-94</p>
+                    <p class="phone-text">Звонок бесплатный</p>
+                    <a href="http://ontopstudio.ru/contact.html">Контакты</a>
+                </div>
+            </header><!-- .header-->
+
+            <main class="content">
+                <div class="main-page">
+                    <h1>Делаем продающие сайты для бизнеса &#171;под ключ&#187;</br> и запускаем на них поток клиентов</h1>
+                    <div class="services">
+                        <div class="service">
+                            <a href="http://ontopstudio.ru/bizness.html">
+                                <img src="images/service-1.jpg" alt="Бизнес сайт">
+                            </a>
+                            <div class="service-descr">
+                                <div class="service-descr-zag">Бизнес сайт</div>
+                                <p class="service-descr-text">
+                                    Готовый дизайн на выбор из каталога
+                                    <span>Запуск за 2-3 дня</span>
+                                </p>
+                                <div class="service-price">9 900 руб.</div>
+                                <a href="http://ontopstudio.ru/bizness.html">Подробнее</a>
+                            </div>
+                        </div><!-- .service -->
+                        <div class="service">
+                            <a href="http://ontopstudio.ru/landing.html">
+                                <img src="images/service-2.jpg" alt="Лендинг пейдж">
+                            </a>
+                            <div class="service-descr">
+                                <div class="service-descr-zag">Лендинг пейдж</div>
+                                <p class="service-descr-text">
+                                    Готовый дизайн на выбор из каталога
+                                    <span>Запуск за 2-3 дня</span>
+                                </p>
+                                <div class="service-price">8 900 руб.</div>
+                                <a href="http://ontopstudio.ru/landing.html">Подробнее</a>
+                            </div>
+                        </div><!-- .service -->
+                        <div class="service">
+                            <a href="#">
+                                <img src="images/service-3.jpg" alt="Эксклюзив">
+                            </a>
+                            <div class="service-descr">
+                                <div class="service-descr-zag">Эксклюзив</div>
+                                <p class="service-descr-text">
+                                    Индивидуальная разработка сайта или лендинга
+                                </p>
+                                <!-- <div class="service-price">от 29 900 руб.</div> -->
+                                <a class="service-right-link" href="http://ontopstudio.ru/exclusive-site.html">Сайт</a><a  class="service-left-link" href="http://ontopstudio.ru/exclusive-landing.html">Лендинг</a>
+                            </div>
+                        </div><!-- .service -->
+                    </div>
+                    <div class="wrap-set">
+                        <div class="wrap-set-zag">В комплекте с каждым сайтом</div>
+                        <div class="set">
+                            <a href="#">Дизайн</a>
+                            <p>Профессиональный</br> продающий дизайн</p>
+                        </div>
+                        <div class="set hostn">
+                            <a href="#">Хостинг</a>
+                            <p>Хостинг и домен</br> на 12 месяцев</p>
+                        </div>
+                        <div class="set tehobs">
+                            <a href="#">Техобслуживание</a>
+                            <p>Техобслуживание</br> на 12 месяцев</p>
+                        </div>
+                        <div class="set cms">
+                            <a href="#">CMS</a>
+                            <p>Удобная система</br> управления сайтом</p>
+                        </div>
+                        <div class="set analit">
+                            <a href="#">Аналитика</a>
+                            <p>Система аналитики</br> от Яндекс и Google</p>
+                        </div>
+                    </div><!-- .wrap-set -->
+                    <div class="wrap-text-desc">
+                        <div class="wrap-text-desc-zag">Быстрый запуск сайта или лендинга за 3 дня &#171;под ключ&#187;</div>
+                        <div class="text-desc">
+                            <p>Чтобы вы могли максимально быстро запустить свой сайт или протестировать нишу в интернете мы разработали эффективные продающие шаблоны сайтов и лендингов с широкими функциональными возможностями. Цветовою гамму и оформление сайта можно легко изменить в соответствии с фирменным стилем ващей компании. Все сайты имеют удобную систему управления контентом, благодаря которой вы сможете самостоятельно изменять и добавлять новые материалы на сайте.</p>
+                            <p>Выберите дизайн вашего сайта в нашем <a href="#">каталоге шаблонов</a>, а если ни один из готовых шаблонов вам не подойдет, то вы можете заказать <a href="#">индивидуальную разработку</a> сайта или лендинга.</p>
+                        </div>
+                        <div class="image-right">
+                            <img src="images/nog.jpg" height="245" width="270" alt="">
+                        </div>
+                    </div><!-- .wrap-text-desc -->
+                    <div class="wrap-income">
+                        <div class="wrap-income-img">
+                            <img src="images/kapusta.jpg" height="231" width="270" alt="">
+                        </div>
+                        <div class="wrap-income-text">
+                            <div class="wrap-income-zag">Увеличивайте доход вашего бизнеса</div>
+                            <p>Сайты, созданные нами, отвечают всем современным требованиям к веб-дизайну и эффективности. После запуска сайт полностью готов к продвижению, как в контекстной рекламе (Яндекс.Директ, Google AdWords), так и в поисковой выдаче (SEO). Наши менеджеры подскажут вам, какую информацию о вашей компании лучше разместить на сайте, чтобы заинтересовать ваших потенциальных клиентов и побудить их сделать заказ. Услуги по продвижению вашего сайта вы также можете заказать в нашей студии. Таким образом, вы получаете готовый инструмент для привлечения клиентов из Интернета и получения дополнительной прибыли от вашего бизнеса.</p>
+                        </div>
+                    </div><!-- .wrap-income -->
+                    <div class="wrap-text-desc">
+                        <div class="wrap-text-desc-zag">Создаем поток клиентов на ваш сайт</div>
+                        <div class="text-desc">
+                            <p>Для продвижения сайтов и лендингов мы используем самые эффективные инструменты интернета. Наши специалисты-маркетологи подберут для вашего сайта самые оптимальные рекламные площадки и разработают эффективную стратегию продвижения, которая начнет приводить вам новых клиентов уже на следующий день после запуска.</p>
+                            <p><a class="read-more" href="#">Подробнее</a></p>
+                        </div>
+                        <div class="image-right">
+                            <img src="images/morkov.jpg" height="196" width="269" alt="">
+                        </div>
+                    </div><!-- .wrap-text-desc -->
+                    <div class="wrap-attraction">
+                        <div class="wrap-attraction-zag">Для привлечения клиентов на ваш сайт мы используем:</div>
+                        <div class="attraction">
+                            <div class="attraction-img">
+                                <img class="ya" src="images/ya-go.jpg" height="63" width="126" alt="">
+                            </div>
+                            <p>Контекстная реклама</br> Яндекс.Директ</br> и Google AdWords</p>
+                        </div>
+                        <div class="attraction">
+                            <div class="attraction-img">
+                                <img class="yt" src="images/youtube.jpg" height="44" width="104" alt="">
+                            </div>
+                            <p>Реклама</br> на YouTube</p>
+                        </div>
+                        <div class="attraction">
+                            <div class="attraction-img">
+                                <img class="avito" src="images/avito.jpg" height="35" width="110" alt="">
+                            </div>
+                            <p>Баннерная реклама</br> на Avito</p>
+                        </div>
+                        <div class="attraction">
+                            <div class="attraction-img">
+                                <img class="seo" src="images/seo.jpg" height="49" width="106" alt="">
+                            </div>
+                            <p>Поисковое</br> продвижение (SEO)</p>
+                        </div>
+                    </div><!-- .wrap-attraction -->
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-wrap-zag">Примеры сайтов и отзывы их владельцев</div>
+                        <div class="portfolio-item">
+                            <img src="images/port.jpg" height="183" width="292" alt="">
+                            <div class="portfolio-desc">
+                                <a target="_blank" href="#">stroyka-veka.ru</a>
+                                <span>Бизнес сайт</span>
+                                <p>Владимир Бочкарев<span>г. Курск</span></p>
+                            </div>
+                            <p class="otziv">
+                                Сайты, созданные нами, отвечают всем современным требованиям к веб-дизайну и эффективности. После запуска сайт полностью готов к продвижению, как в контекстной рекламе (Яндекс.Директ, Google AdWords), так и в поисковой выдаче (SEO).
+                            </p>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/port.jpg" height="183" width="292" alt="">
+                            <div class="portfolio-desc">
+                                <a target="_blank" href="#">dveri-volgograd.ru</a>
+                                <span>Лендинг</span>
+                                <p>Александр Петропавловский<span>г. Волгоград</span></p>
+                            </div>
+                            <p class="otziv">
+                                Сайты, созданные нами, отвечают всем современным требованиям к веб-дизайну и эффективности. После запуска сайт полностью готов к продвижению, как в контекстной рекламе (Яндекс.Директ, Google AdWords), так и в поисковой выдаче (SEO).
+                            </p>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/port.jpg" height="183" width="292" alt="">
+                            <div class="portfolio-desc">
+                                <a target="_blank" href="#">prommontage.ru</a>
+                                <span>Бизнес сайт</span>
+                                <p>Петр Костюков<span>г. Москва</span></p>
+                            </div>
+                            <p class="otziv">
+                                Сайты, созданные нами, отвечают всем современным требованиям к веб-дизайну и эффективности. После запуска сайт полностью готов к продвижению, как в контекстной рекламе (Яндекс.Директ, Google AdWords), так и в поисковой выдаче (SEO).
+                            </p>
+                        </div>
+                    </div><!-- .portfolio-wrap -->
+                    <div class="catalog-wrap">
+                        <div class="catalog-zag">Посмотрите каталог дизайнов сайтов</div>
+                        <div class="catalog-slider">
+                            <ul class="bxslider">
+                                <li>
+                                    <div class="slide-wrap">
+                                        <div class="image-slade-item">
+                                            <img src="images/skin.jpg" height="94" width="150" alt="">
+                                        </div>
+                                        <div class="image-slade-item">
+                                            <img src="images/skin.jpg" height="94" width="150" alt="">
+                                        </div>
+                                        <div class="image-slade-item">
+                                            <img src="images/skin.jpg" height="94" width="150" alt="">
+                                        </div>
+                                        <div class="image-slade-item">
+                                            <img src="images/skin.jpg" height="94" width="150" alt="">
+                                        </div>
+                                        <div class="image-slade-item">
+                                            <img src="images/skin.jpg" height="94" width="150" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="old-catalog" href="#">Смотреть весь каталог</a>
+                    </div>
+                </div>
+            </main><!-- .content -->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.gif" height="31" width="31" alt="Логотип WEB-студии">
+                        <span>OnTop Studio</span>
+                        Создание продающих сайтов для бизнеса &#171;под ключ&#187;
+                    </a>
+                </div>
+                <div class="wrap-center">
+                    <nav class="soc-menu">
+                        <ul>
+                            <li><a target="_blank" class="vk" href="https://vk.com/sozdanie_prodvijenie_saitov">В контакте</a></li>
+                            <li><a target="_blank" class="fb" href="https://www.facebook.com/ontopstudioru">Facebook</a></li>
+                            <li><a target="_blank" class="tw" href="https://twitter.com/ontopstudio">Twitter</a></li>
+                            <li><a target="_blank" class="ok" href="http://ok.ru/group/52594971246661">Одноклассники</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copy">
+                        &copy; 2015 OnTop Studio. Все права защищены. Группа компаний &#171;Альянс Консалт&#187;.
+                    </div>
+                </div>
+                <div class="contact-footer">
+                    <p class="phone">8-800-775-78-94</p>
+                    <p class="phone-text">Звонок бесплатный</p>
+                    <a href="http://ontopstudio.ru/contact.html">Контакты</a>
+                </div>
+            </div>
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Заявка на создание сайта > WEB-студия OnTop Studio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.gif" height="31" width="31" alt="Логотип WEB-студии">
+                        <span>OnTop Studio</span>
+                        Создание продающих сайтов для бизнеса &#171;под ключ&#187;
+                    </a>
+                </div>
+                <div class="navigition">
+                    <nav>
+                        <ul>
+                            <li><a href="http://ontopstudio.ru/bizness.html">Бизнес сайт</a></li>
+                            <li><a href="http://ontopstudio.ru/landing.html">Landing Page</a></li>
+                            <li><a href="http://ontopstudio.ru/exclusive-site.html">Эксклюзивный сайт</a></li>
+                            <li><a href="#">Привлечение клиентов</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                         <ul>
+                             <li><a href="#">Каталог шаблонов</a></li>
+                             <li><a href="#">Портфолио</a></li>
+                         </ul>
+                     </nav> 
+                </div>
+                
+                <div class="contact-head">
+                    <p class="phone">8-800-775-78-94</p>
+                    <p class="phone-text">Звонок бесплатный</p>
+                    <a href="http://ontopstudio.ru/contact.html">Контакты</a>
+                </div>
+            </header><!-- .header-->
+
+            <main class="content">
+                <div class="page">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="/">Главная</a></li>
+                            <li>Заявка на создание сайта</li>
+                        </ul>
+                    </div>
+                    <div class="wrap-application">
+                        <h1>Заявка на создание сайта</h1>
+                        <p>Заполните заявку и наш менеджер перезвонит вам в ближайшее время для уточнения всех деталей.</p>
+                        <div id="messenger"></div>
+                        <form id="order-form" action="" method="post">
+                            <div class="form-row">
+                                <label for="nameId">Введите ваше имя <span>*</span></label>
+                                <input id="nameId" type="text" name="name">
+                            </div>
+                            <div class="form-row">
+                                <div class="left">
+                                    <label for="phoneId">Телефон <span>*</span></label>
+                                    <input id="phoneId" type="text" name="phone">
+                                </div>
+                                <div class="right">
+                                    <label for="emailId">E-mail <span>*</span></label>
+                                    <input id="emailId" type="text" name="email">
+                                </div>
+                            </div>
+                            <div class="radio-box">
+                                <p>Выберите тариф <span>*</span></p>
+                                <input id="minimal-radio-1" type="radio" name="minimal-radio" tabindex="7" >
+                                <label class="" for="minimal-radio-1">Бизнес сайт за 9900 руб.</label>
+                                <input id="minimal-radio-2" type="radio" checked="" name="minimal-radio" tabindex="8" >
+                                <label class="" for="minimal-radio-2">Лендинг пейдж за 8900 руб.</label>
+                                <input id="minimal-radio-3" type="radio" name="minimal-radio" tabindex="7" >
+                                <label class="" for="minimal-radio-3">Эксклюзивный сайт</label>
+                                <input id="minimal-radio-4" type="radio" checked="" name="minimal-radio" tabindex="8" >
+                                <label class="" for="minimal-radio-4">Эксклюзивный лендинг</label>
+                            </div>
+                            <div class="form-row">
+                                <input class="btn-submit" type="submit" value="Отправить заявку">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main><!-- .content -->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.gif" height="31" width="31" alt="Логотип WEB-студии">
+                        <span>OnTop Studio</span>
+                        Создание продающих сайтов для бизнеса &#171;под ключ&#187;
+                    </a>
+                </div>
+                <div class="wrap-center">
+                    <nav class="soc-menu">
+                        <ul>
+                            <li><a target="_blank" class="vk" href="https://vk.com/sozdanie_prodvijenie_saitov">В контакте</a></li>
+                            <li><a target="_blank" class="fb" href="https://www.facebook.com/ontopstudioru">Facebook</a></li>
+                            <li><a target="_blank" class="tw" href="https://twitter.com/ontopstudio">Twitter</a></li>
+                            <li><a target="_blank" class="ok" href="http://ok.ru/group/52594971246661">Одноклассники</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copy">
+                        &copy; 2015 OnTop Studio. Все права защищены. Группа компаний &#171;Альянс Консалт&#187;.
+                    </div>
+                </div>
+                <div class="contact-footer">
+                    <p class="phone">8-800-775-78-94</p>
+                    <p class="phone-text">Звонок бесплатный</p>
+                    <a href="http://ontopstudio.ru/contact.html">Контакты</a>
+                </div>
+            </div>
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

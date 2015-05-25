@@ -1,0 +1,36 @@
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.gif" height="31" width="31" alt="Логотип WEB-студии">
+                        <span>OnTop Studio</span>
+                        Создание продающих сайтов для бизнеса &#171;под ключ&#187;
+                    </a>
+                </div>
+                <div class="wrap-center">
+                    <nav class="soc-menu">
+                        <ul>
+                            <li><a target="_blank" class="vk" href="https://vk.com/sozdanie_prodvijenie_saitov">В контакте</a></li>
+                            <li><a target="_blank" class="fb" href="https://www.facebook.com/ontopstudioru">Facebook</a></li>
+                            <li><a target="_blank" class="tw" href="https://twitter.com/ontopstudio">Twitter</a></li>
+                            <li><a target="_blank" class="ok" href="http://ok.ru/group/52594971246661">Одноклассники</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copy">
+                        &copy; 2015 OnTop Studio. Все права защищены. Группа компаний &#171;Альянс Консалт&#187;.
+                    </div>
+                </div>
+                <div class="contact-footer">
+                    <p class="phone">8-800-775-78-94</p>
+                    <p class="phone-text">Звонок бесплатный</p>
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

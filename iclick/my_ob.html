@@ -1,0 +1,241 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header auth">
+                <div class="head-auth">
+                    <div class="wrap">
+                        <div class="cont-ob">
+                            <p>На сайте 27 355 711 объявлений</p>
+                        </div>
+                        <div class="logo-auth">
+                            <a href="/">
+                                <img src="images/logo-auth.png" height="63" width="174" alt="">
+                            </a>
+                        </div>
+                        <div class="block-links">
+                            <a class="advertising" href="#">Реклама на сайте</a>
+                            <a class="help" href="#">Помощь</a>
+                        </div>
+                        
+                        <div class="main-menu">
+                            <ul>
+                                <li><a class="personal-cab" href="#">Личный кабинет</a></li>
+                                <li><a class="favorites" href="#">Избранное</a></li>
+                                <li><a class="open-shop" href="#">Открой свой магазин</a></li>
+                                <li><a class="add-advertisement" href="#">Подать обьявление</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- .wrap -->    
+                </div><!-- .head-auth -->
+                <div class="wrap-nav-auth">
+                    
+                    <div class="nav-wrap ">
+                        <div class="left-menu">
+                            <ul>
+                                <li><a class="shop-main" href="#">
+                                        <img src="images/telechka.png" height="17" width="17" alt="">
+                                        Магазины
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="my-obya" href="#">
+                                        <img src="images/radaktirov.png" height="15" width="15" alt="">
+                                        Мои обьявления
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/games.png" height="18" width="19" alt="">
+                                        Играй онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/tickets.png" height="20" width="23" alt="">
+                                        Билеты онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/read.png" height="23" width="25" alt="">
+                                        Читай онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/ndvighim.png" alt="">
+                                        Сдавай-Снимай недвижимость онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/auktion.png" height="20" width="29" alt="">
+                                        Аукцион онлайн
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                     
+                    </div><!-- .nav-wrap -->
+                </div>
+            </header><!-- .header-->
+
+            <main class="content">
+                <div class="wrap">
+                    <div class="my_ob">
+                        <h1>Мои Обьявления</h1>
+                        <div class="left-my">
+                            <ul>
+                                <li><a class="active" href="#">Мои обьявления</a></li>
+                                <li><a href="#">Кошелек</a></li>
+                                <li><a href="#">Магазин</a></li>
+                                <li><a href="#">Настройки</a></li>
+                                <li><a href="#">Правила</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-my">
+                            <div class="section">  
+                                <ul class="tabs">  
+                                    <li class="current">Активные</li>  
+                                    <li>Не активные</li>  
+                                </ul>  
+                                <div class="box visible">  
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>№ Обьявления</td>
+                                                <td>Дата подачи обьявления</td>
+                                                <td>Последние изменения</td>
+                                                <td>Статус обьявления</td>
+                                                <td>Сумма</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1234567</td>
+                                                <td>08.03.2015</td>
+                                                <td>08.03.2015</td>
+                                                <td>ViP</td>
+                                                <td>2 500 руб.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234568</td>
+                                                <td>08.03.2015</td>
+                                                <td>08.03.2015</td>
+                                                <td>ViP</td>
+                                                <td>2 500 руб.</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">Итого: 5 000 руб.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>  
+                                <div class="box">  
+                                    Содержимое второго блока  
+                                </div>  
+                            </div><!-- .section --> 
+                            <a class="btn-add" href="#">Подать обьявление</a>
+                        </div>
+                    </div>
+                </div>
+            </main><!-- .content -->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="wrap-footer-nav">
+                <div class="wrap">
+                    <nav class="footer-menu-left">
+                        <ul>                              
+                            <li class="active"><a href="#">История компании</a></li>
+                            <li><a href="#">Реклама на сайте</a></li>
+                            <li><a href="#">Для прессы</a></li>
+                            <li><a href="#">Работа в компании</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Безопасность</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-menu-rigth">
+                        <ul>
+                            <li class="feedback-link"><a href="#">Обратная связь</a></li>
+                            <li class="category-link"><a href="#">Выйти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!-- .wrap-footer-nav -->
+            <div class="wrap-footer">
+                <div class="wrap">
+                    <div class="copy">
+                        © 2014 i Clik.ru   сайт объявлений
+                    </div>
+                    <div class="conter">
+                        <a href="#">
+                            <img src="images/counter.png" height="25" width="26">
+                        </a>
+                    </div>
+                    <div class="created">
+                        <a href="#"><img src="images/created.png" height="26" width="75" alt=""></a>
+                    </div>
+                </div>
+            </div><!-- .wrap-footer -->
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

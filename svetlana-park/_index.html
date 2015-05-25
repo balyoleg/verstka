@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header">
+                <div class="head-wrap clearfix">
+                    <div class="logo"><a href="/"><img src="images/logo.jpg" alt=""></a></div>
+                    <div class="wrap-right">
+                        <div class="phone">Телефон отдела продаж <span>8-800-555-77-89</span></div>
+                        <nav class="main-menu">
+                            <ul>
+                                <li><a href="#">О комплексе</a></li>
+                                <li><a href="#">Инфраструктура</a></li>
+                                <li><a href="#">Планировки</a></li>
+                                <li><a href="#">Цены</a></li>
+                                <li><a href="#">Фотоотчет</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header><!-- .header-->
+        </div><!-- .wrapper -->
+            <main class="content">
+                <div class="new-apartment">
+                    <div class="wrapper">
+                        <p>
+                        НОВЫЕ КВАРТИРЫ В СОЧИ<br/>
+                        С ВИДОМ НА МОРЕ
+                        </p>
+                    </div><!-- .wrapper -->
+                </div>
+                <div class="desc-compl">
+                    <div class="wrapper">
+                        <div class="logo-cont">
+                            <img src="images/logo-cont.jpg" height="137" width="345" alt="">
+                        </div>
+                        <p class="adress">Адрес: г. Сочи, ул. Курортный проспект, д. 75</p>
+                        <div class="desc-compl-content clearfix">
+                            <div class="item leftwrap">
+                                <div class="item-op one">10 этажей</div>
+                                <div class="item-op">Парковка<br/> на первом этаже</div>
+                                <div class="item-op">Первая<br/> береговая линия</div>
+                                <div class="item-op">Центр<br/> города Сочи</div>
+                            </div>
+                            <div class="item centerwrap">
+                                <a class="fancy" href="images/orignal/1.jpg">
+                                    <img src="images/1.png" height="390" width="521" alt="">
+                                </a>
+                            </div>
+                            <div class="item rightwrap">
+                                <div class="item-op">25 км<br/> до аэропорта</div>
+                                <div class="item-op">5 км<br/> до ЖД вокзала</div>
+                                <div class="item-op">3,5 км<br/> до морского порта</div>
+                                <div class="item-op">300 метров<br/> до моря</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .desc-compl -->
+                <div class="about-wrap">
+                    <div class="wrapper">
+                        <h2>О комплексе</h2>
+                        <div class="about clearfix">
+                            <div class="left-about">
+                                <p>Обладание квартирой, в наиболее респектабельном районе летней столицы, именуемом Золотым Треугольником, погруженным в зелень великолепных парков, искрящегося звенящими переливами дышащих свежестью фонтанов в соседстве с объектами по праву считающимися визитными карточками Сочи, среди которых Зимний Театр являющийся сосредоточением богемного общества, в том числе и в рамках регулярно проходящего кинофестиваля «Кинотавр», Летний Театр, всемирно известный, уникальный, реликтовый парк «Дендрарий», Сочинский Цирк, плеяда фешенебельных ресторанов и ночных клубов, кажется прерогативой избранных, но именно сейчас, Вы имеете уникальную возможность воплотить мечту в реальность!</p>
+                                <p>Апартаментный комплекс представлен многофункциональным 10 этажным зданием, имеющим оригинальный дизайн, и гармонично вписывающимся в архитектуру микрорайона. Здание полностью соответствует современным требованиям объектов премиум класса.  На первом этаже располагается парковочный комплекс, имеющий внутренний вход на второй этаж с торговыми площадями, и вход в сам апартаментный комплекс.</p>
+                                <p>Благодаря особенностям месторасположения, соотношения цены и качества строительства, комплекс «Светлана Парк» без преувеличения является лучшим предложением на рынке курортной недвижимости Большого Сочи! Уютные или просторные апартаменты - вне зависимости от выбора, Вы станете привилегированным обладателем недвижимости, идеально подходящей как для сезонного отдыха с семьей или в компании друзей, так и для круглогодичного проживания в условиях высочайшего комфорта.</p>
+                                <p>Апартаментный комплекс имеет удобные автомобильные подъезды, а благодаря своему выгодному расположению – хорошее транспортное сообщение. Расстояние до аэропорта 25 километров, ЖД Вокзала 5 километров, Морского Порта 3,5 километра. В шаговой доступности находятся лучшие центральные пляжи, ночные клубы, бары и рестораны, а также объекты активного отдыха, фитнес-центры, скверы, всемирно известный Сочинский Дендрарий, и одна из главных достопримечательностей – парк имени Фрунзе.</p>
+                            </div><!-- .left-about -->
+                            <div class="right-about">
+                                <div class="img-wrap">
+                                    <a class="fancy" href="images/orignal/2.jpg">
+                                        <img src="images/2.jpg" height="262" width="350" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-wrap">
+                                    <a class="fancy" href="images/orignal/3.jpg">
+                                        <img src="images/3.jpg" height="262" width="350" alt="">
+                                    </a>
+                                </div>
+                                <div class="img-wrap">
+                                    <a class="fancy" href="images/orignal/4.jpg">
+                                        <img src="images/4.jpg" height="262" width="350" alt="">
+                                    </a>
+                                </div>
+                            </div><!-- .right-about -->
+                        </div><!-- .about -->   
+                    </div><!-- .wrapper -->
+                </div><!-- .about-wrap -->
+                <div class="slider-wrap">
+                    <div class="wrapper">
+                        <ul class="bxslider">
+                            <li>
+                                <div class="slide-wrap">
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide1.jpg">
+                                                <img src="images/slide1.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Вид на Сочи с моря</p>
+                                    </div>
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide2.jpg">
+                                                <img src="images/slide2.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Сочинский Дендрарий</p>
+                                    </div>
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide3.jpg">
+                                                <img src="images/slide3.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Парк имени Фрунзе</p>
+                                    </div>
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide4.jpg">
+                                                <img src="images/slide4.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Беседка в парке им. Фрунзе</p>
+                                    </div>
+                                </div><!-- .slide-wrap -->
+                            </li>
+                            <li>
+                                <div class="slide-wrap">
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide1.jpg">
+                                                <img src="images/slide1.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Вид на Сочи с моря</p>
+                                    </div>
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide2.jpg">
+                                                <img src="images/slide2.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Сочинский Дендрарий</p>
+                                    </div>
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide3.jpg">
+                                                <img src="images/slide3.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Парк имени Фрунзе</p>
+                                    </div>
+                                    <div class="slide-img-wrap">
+                                        <div class="slide-img">
+                                            <a class="fancy" href="images/orignal/slide4.jpg">
+                                                <img src="images/slide4.jpg" height="170" width="170" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Беседка в парке им. Фрунзе</p>
+                                    </div>
+                                </div><!-- .slide-wrap -->
+                            </li>
+                        </ul>
+                    </div><!-- .wrapper -->
+                </div><!-- .slider-wrap -->
+                <div class="wrap-map">
+                    <div class="wrapper">
+                        <h2>Карта обьектов инфраструктуры</h2>
+                    </div>
+                    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0ZKu7bEnJ5ZFG8ZJR6Xa2TpGKKRDbFt_&width=1366&height=589"></script>
+                </div>
+                <div class="floor-plan">
+                    <div class="wrapper">
+                        <h2>Планировки квартир</h2>
+                        <p>План типового этажа (3-10)</p>
+                        <img id="zoom" src="images/floor-plan.jpg" data-zoom-image="images/orignal/floor-plan.jpg"  alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="wrapper">
+                        <h2>Цены на квартиры</h2>
+                        <div class="tabs">
+                            <ul class="tabs__caption">
+                                <li class="active">1 подьезд</li>
+                                <li>2 подьезд</li>
+                            </ul>
+                            <div class="tabs__content active">
+                                Содержимое первого блока
+                            </div>
+                            <div class="tabs__content">
+                                Содержимое второго блока
+                            </div>
+                        </div><!-- .tabs-->
+                    </div>
+                </div>
+            </main><!-- .content -->
+
+        
+
+        <footer class="footer">
+            <strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+        </footer><!-- .footer -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

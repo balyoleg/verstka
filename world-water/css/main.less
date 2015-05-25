@@ -1,0 +1,878 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* End of Eric Meyer's CSS Reset */
+html {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body {
+    font: 12px/18px Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    width: 1182px;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+/* ==========================================================================
+   Variables Less
+   ========================================================================== */
+@colorText: #333366;
+@pathImg: "../images/";
+
+/* ==========================================================================
+   Mixins Less
+   ========================================================================== */
+.before(@bgImg, @pos-gor, @pos-ver, @height, @left, @top, @width) {
+    background: url("@{pathImg}@{bgImg}.png") no-repeat @pos-gor @pos-ver;
+    content: ' ';
+    display: block;
+    height: @height;
+    left: @left;
+    position: absolute;
+    top: @top;
+    width: @width;    
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    height: 210px;
+    .header-top {
+        background: url("@{pathImg}bg-header-top.png") no-repeat right bottom;
+        // float: right;
+        height: 38px;
+        width: 100%;
+        ul {
+            float: right;
+            li {
+                float: left;
+                list-style: none;
+                margin-left: 60px;
+                a {
+                    display: block;
+                    font: 11px Arial;
+                    position: relative;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &.complaint {
+                        color: @colorText;
+                        &:before {
+                            .before(@bgImg: sprite-header-top, @pos-gor: 0, @pos-ver: 0, @height: 19px, @left: -28px, @top: -4px, @width: 23px);
+                        } 
+                    }
+                    &.personal-cab-link {
+                        color: #666;
+                        &:before {
+                            .before(@bgImg: sprite-header-top, @pos-gor: -24px, @pos-ver: 0, @height: 19px, @left: -25px, @top: -5px, @width: 17px);
+                        }
+                    }
+                }
+            }
+        }
+    } // end header-top
+    .head-wrap {
+        overflow: hidden;
+        // padding: 36px 0 0 0;
+        width: 100%;
+        .logo {
+            float: left;
+            height: 109px;
+            margin: 15px 35px 0 0;
+            width: 187px;
+            a {
+                display: block;
+                img {
+                    border: none;
+                }
+            }
+        } // end logo
+        .slogan {
+            color: @colorText;
+            float: left;
+            font: 24px/1.1 'Segoe UI';
+            height: 100%;
+            margin: 25px 68px 0 0;
+            text-transform: uppercase;
+            text-align: center;
+            width: 330px;
+            span {
+                color: #cc0066;
+                font: 16px Arial;
+            }
+            .big-text {
+                color: #33cccc;
+                font: 24px 'Segoe UI';
+            }
+        } // end slogan
+        .item-head-links {
+            color: #999;
+            font: 14px 'Segoe UI';
+            float: left;
+            margin: 29px 45px 0 0;
+            width: 175px;
+            .providers {
+                color: #999;
+                display: block;
+                font: 14px 'Segoe UI';
+                margin:0 0 17px 0;
+                padding: 0 0 13px 71px;
+                position: relative;
+                text-decoration: none;
+                &:before {
+                    .before(@bgImg: sprite-item-head-links, @pos-gor: 0, @pos-ver: 0, @height: 55px, @left: 0, @top: -5px, @width: 53px);
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .сallback {
+                border: 1px dashed #00b7b1;
+                border-radius: 8px;
+                color: @colorText;
+                font: 12px Arial;
+                padding: 6px 6px 6px 30px;
+                position:relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:before {
+                    .before(@bgImg: sprite-item-head-links, @pos-gor: -55px, @pos-ver: 0, @height: 21px, @left: 7px, @top: 3px, @width: 20px);
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        } // end item-head-links 
+        .head-phone {
+            color: @colorText;
+            float: left;
+            font: 24px Arial;
+            margin: 28px 40px 0 0;
+            width: 160px;
+            span {
+                color: @colorText;
+                font: 18px Arial;
+            }
+        } // end head-pnone
+        .head-card {
+            background: url("@{pathImg}cart-bg.png") no-repeat;
+            float: left;
+            height: 106px;
+            position: relative;
+            width: 134px;
+            a {
+                bottom: 40px;
+                color: #fff;
+                font: 10px Arial;
+                left: 17px;
+                position: absolute;
+                text-align: center;
+                text-decoration: none;
+                width: 75%;
+                span {
+                    font-size: 18px;
+                }
+            }
+        } // end head-card
+    } // end head-wrap
+    .navigition {
+        margin: 21px 0 0 0;
+        nav {
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    float: left;
+                    list-style: none;
+                    a{
+                        color: #666;
+                        font: 16px Arial;
+                        padding: 10px 18px;
+                        position: relative;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        z-index: 5000;
+                        &:hover {
+                            background: linear-gradient(to top, #e5e5e5, #dfdfdf);
+                            border-radius: 10px 10px 0 0;
+                            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15) inset, 0 1px 0 #fff;
+                            color: #1f325d;
+                        }
+                    }
+                }
+            }
+        }
+        .prosto-order {
+            background: linear-gradient(to bottom, #e63e95 0%, #e63e95 50%, #d61c7c 51%, #d51c7c 100%);
+            border: 1px solid #e22084;
+            border-radius: 3px;
+            color: #fff;
+            display: block;
+            float: right;
+            font: bold 12px Arial;
+            margin: -17px 0 0;
+            padding: 8px 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+            position: relative;
+            &:before {
+                background: url(../images/butel.png) no-repeat;
+                content: ' ';
+                display: block;
+                height: 55px;
+                left: -26px;
+                position: absolute;
+                top: -17px;
+                width: 41px;
+            }
+            &:hover {
+                background: linear-gradient(to top, #e63e95 0%, #e63e95 50%, #d61c7c 51%, #d51c7c 100%);
+            }
+        } // end prosto-order
+    } // end navigition
+} // end header
+
+/* Slider
+-----------------------------------------------------------------------------*/
+.wrap-slider {
+    margin: -2px 0 0 0;
+    .bx-wrapper {
+        position: relative;
+        .bx-viewport {
+            border-radius: 0 0 8px 8px;
+            .bxslider {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                }
+            }
+        }
+        .bx-controls {
+            bottom: 27px;
+            left: 31%;
+            position: absolute;
+            .bx-pager {
+                .bx-pager-item {
+                    float: left;
+                    margin-right: 15px;
+                    a {
+                        background: url("../images/sprite-slider-nav.png") no-repeat;
+                        display: block;
+                        height: 15px;
+                        opacity: 0.8;
+                        text-indent: -9999px;
+                        width: 16px;
+                        &.active, &:hover {
+                            background: url("../images/sprite-slider-nav.png") no-repeat -16px 0; 
+                        }
+                    }
+                }
+            }
+            .bx-controls-direction {
+                display: none;
+            }
+        }    
+    }
+} // wrap-slider
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+    width: 100%;
+    padding: 0 0 125px;
+    position: relative;
+}
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.content {
+    padding: 0 295px 0 0;
+    .main-content {
+        h1 {
+            color: #cc0066;
+            font: 24px 'Segoe UI';
+            padding-left: 15px;
+            text-transform: uppercase;
+        }
+        .product-main {
+            // padding: 0 0 0 15px;
+            min-height: 400px;
+            .item-product {
+                border: 1px solid #cce2e8;
+                border-radius: 5px;
+                float: left;
+                margin: 0 27px 0 0;
+                width: 264px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .item-product-zag {
+                    background: linear-gradient(to top, #2891de, #1b84d1);
+                    border-bottom: 1px solid #11588b;
+                    border-radius: 5px 5px 0 0;
+                    color: #fff;
+                    font: 18px Arial;
+                    padding: 6px 12px;
+                    text-transform: uppercase;
+                }
+                .item-product-content {
+                    height: 310px;
+                    padding: 12px;
+                    .volume {
+                        border: 1px solid #d7d2d2;
+                        border-radius: 15px;
+                        color: #1f325d;
+                        font: bold 16px Arial;
+                        padding: 5px 8px 5px 6px;
+                        position: relative;
+                        z-index: 9999;
+                    }
+                    .item-product-img {
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+                    .item-product-price {
+                        color: #cc0066;
+                        font: bold 36px Arial;
+                        text-align: center;
+                        span {
+                            position: relative;
+                            &:before {
+                                background: url(../images/ico-ruble.png) no-repeat;
+                                content: ' ';
+                                display: block;
+                                height: 21px;
+                                right: -21px;
+                                top: 13px;
+                                position: absolute;
+                                width: 16px;
+                            }   
+                        }
+                    }
+                    .item-product-order {
+                        background: url(../images/bg-button-order.png) no-repeat;
+                        color: #fff;
+                        font: bold 22px/55px 'Segoe UI';
+                        display: block;
+                        height: 58px;
+                        position: absolute;
+                        text-align: center;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        width: 241px;
+                    }
+                }
+            }
+            .bestseller {
+                position: relative;
+                &:before {
+                    background: url(../images/sprite-stticer.png) no-repeat;
+                    content: ' ';
+                    display: block;
+                    height: 88px;
+                    right: -8px;
+                    top: -7px;
+                    position: absolute;
+                    width: 89px;
+                }
+            }
+            .classic {
+                position: relative;
+                &:before {
+                    background: url(../images/sprite-stticer.png) no-repeat -90px 0;
+                    content: ' ';
+                    display: block;
+                    height: 88px;
+                    right: -8px;
+                    top: -7px;
+                    position: absolute;
+                    width: 89px;
+                }
+            }
+            .novelty {
+                position: relative;
+                &:before {
+                    background: url(../images/sprite-stticer.png) no-repeat -179px 0;
+                    content: ' ';
+                    display: block;
+                    height: 88px;
+                    right: -8px;
+                    top: -7px;
+                    position: absolute;
+                    width: 89px;
+                }
+            }
+        }
+        h2 {
+            color: #cc0066;
+            font: 24px 'Segoe UI';
+            padding: 0 0 0 14px;
+            text-transform: uppercase;
+        }
+        .accessories {
+            min-height: 330px;
+            .item-accessories {
+                border: 1px solid #d9d9d9;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                box-shadow: 0 1px 0 #dadada;
+                float: left;
+                min-height: 315px;
+                margin-right: 35px;
+                width: 260px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .item-accessories-zag {
+                    color: #1f325d;
+                    font: 18px Arial;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                .item-accessories-content {
+                    padding-bottom: 20px;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .reviews {
+            overflow: hidden;
+            padding-bottom: 30px;
+            .item-reviews {
+                background: #f1f1f1;
+                border: 1px solid #e1e1e1;
+                float: left;
+                margin-right: 100px;
+                padding: 0 15px;
+                width: 187px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .item-reviews-zag {
+                    color: #333;
+                    font: 16px 'Segoe UI';
+                    padding: 25px 0 0 0;
+                    span {
+                        color: #333;
+                        font: bold 16px 'Segoe UI';
+                        display: block;
+                    }
+                }
+                .item-reviews-content {
+                    p {
+                        color: #333;
+                        font: 12px 'Segoe UI';
+                    }
+                    img {
+                        display:block;
+                        margin: 0 auto 25px;
+                    }
+                }
+            }
+        }
+        .vse-reviews {
+            float: right;
+            margin: 0 25px 80px 0;
+        }
+    }
+}
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.right-sidebar {
+    float: left;
+    width: 260px;
+    margin-left: -275px;
+    margin-top: 35px;
+    padding-right: 15px;
+    position: relative;
+    .widget {
+        background: #dbdbdb;
+        border-radius: 5px;
+        padding: 25px 0 65px 0;
+        margin: 0 0 40px;
+        .widget-zag {
+            color: #cc0066;
+            font: 16px 'Segoe UI';
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .widget-content {
+            ul {
+                // list-style-image: url(../images/bg-li.png);
+                list-style: none;
+                padding-left: 70px;
+                li {
+                    margin: 15px 0 0;
+                    position: relative;
+                    &:before {
+                        background: url(../images/bg-li.png) no-repeat 0 0;
+                        content: ' ';
+                        display: block;
+                        height: 20px;
+                        left: -37px;
+                        position: absolute;
+                        top: 2px;
+                        width: 18px;
+                    }
+                    a {
+                        color: #1f325d;
+                        font: 16px 'Segoe UI';
+                        padding: 0 0 0 0;
+                        text-decoration: underline;
+                        &:hover {
+                            color: #cc0066;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .grafik {
+        background: none !important;
+        padding: 0;
+        .widget-zag {
+            color: #333;
+            font: 14px 'Segoe UI';
+            margin-bottom: 13px;
+            text-align: center;
+            text-transform: uppercase;
+            span {
+                color: #cc0066;    
+            }
+        }
+        .widget-content {
+            .days {
+                background: url(../images/days.png) no-repeat 33px 0;
+                color: #666;
+                font: 14px 'Segoe UI';
+                margin: 0 0 14px 0;
+                padding: 0 0 0 87px;
+                position: relative;
+                p{
+                    margin: 0;
+                    text-transform: uppercase;
+                    span {
+                        color: #0066cc;
+                    }
+                }
+                .clor {
+                    span {
+                        color: #cc0066;
+                    }
+                }
+            }
+            .note {
+                color: #666;
+                font: 14px 'Segoe UI';
+                margin-bottom: 33px;
+                padding-bottom: 20px;
+                position: relative;
+                text-align: center;
+                &:before {
+                    background: url(../images/bg-grafik.png) no-repeat;
+                    content: ' ';
+                    display: block;
+                    height: 33px;
+                    left: 0;
+                    bottom: -33px;
+                    position: absolute;
+                    width: 269px;    
+                }
+            }
+        }
+    }
+    .article-side {
+        background: none;
+        .widget-zag {
+            background: #0791d0;
+            border-radius: 5px 5px 0 0;
+            color: #fff;
+            font: 16px 'Segoe UI';
+            padding: 7px 20px;
+            text-align: left;
+        }
+        .widget-content {
+            background: url(../images/bg-article-side.png) no-repeat left bottom;
+            padding-bottom: 73px;
+            .article-side-wrap {
+                padding: 15px 20px 0 20px;
+                .article-side-zag {
+                    color: #1f325d;
+                    font: 16px 'Segoe UI';
+                    margin-top: 0;
+                }
+                img {
+
+                }
+                .article-side-text {
+                    margin-bottom: 0;
+                    a {
+                        color: #666;
+                        font: 14px Arial;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    background: #f7f7f7;
+    border-top: 1px solid #b8babf;
+    margin: -125px auto 0;
+    height: 125px;
+    position: relative;
+    .footer-wrap {
+        background: url(../images/bg-footer.png) no-repeat;
+        height: 102px;
+        margin: 0 auto 0;
+        padding: 23px 15px 0 15px;
+        position: relative;
+        width: 1160px;
+        .menu-footer {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    float: left;
+                    padding-right: 37px;
+                    a {
+                        color: #999;
+                        font: 14px Arial;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .name-site {
+            color: #333;
+            font: 14px Arial;
+            margin-top: 45px;
+            text-transform: uppercase;
+        }
+        .copy {
+            margin-top: 9px;
+        }
+        .created {
+            bottom: 26px;
+            right: 15px;
+            position: absolute;
+        }
+    }
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

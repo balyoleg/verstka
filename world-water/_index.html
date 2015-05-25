@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header">
+                <div class="header-top">
+                    <ul>
+                        <li><a class="complaint" href="#">Пожаловаться директору</a></li>
+                        <li><a class="personal-cab-link" href="#">Вход в личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="head-wrap">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="images/logo.png" height="109" width="187" alt="">
+                        </a>
+                    </div>
+                    <div class="slogan">
+                        <span>Бесплатная</span><br />
+                        <span class="big-text">доставка питьевой воды</span><br />
+                        по москве и области
+                    </div>
+                    <div class="item-head-links">
+                        <a class="providers" href="#">Мы на портале поставщиков</a>
+                        <a class="сallback" href="#">Обратный звонок</a>
+                    </div>
+                    <div class="head-phone">
+                        <span>(495)</span> 708-45-22
+                        <span>(495)</span> 663-86-91
+                        <span>(495)</span> 929-89-22
+                    </div>
+                    <div class="head-card">
+                        <a href="#"><span>8</span> товаров</a>
+                    </div>
+                </div>
+                <div class="navigition">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">О воде</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Это важно знать</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a class="prosto-order" href="#">
+                        <span>Просто заказать воду</span>
+                    </a>
+                </div>
+            </header><!-- .header-->
+            <div class="wrap-slider">
+                <ul class="bxslider">
+                    <li><img src="images/slider1.jpg" height="285" width="1182" alt=""></li>
+                    <li><img src="images/slider1.jpg" height="285" width="1182" alt=""></li>
+                    <li><img src="images/slider1.jpg" height="285" width="1182" alt=""></li>
+                    <li><img src="images/slider1.jpg" height="285" width="1182" alt=""></li>
+                </ul>
+            </div>
+            <div class="middle">
+
+                <div class="container">
+                    <main class="content">
+                        <div class="main-content">
+                            <h1>Питьевая вода</h1>
+                            <div class="product-main">
+                                <div class="item-product bestseller">
+                                    <div class="item-product-zag">alpina springs</div>
+                                    <div class="item-product-content">
+                                        <span class="volume">18,9 л.</span>
+                                        <div class="item-product-img">
+                                            <a href="#">
+                                                <img src="images/product-main.jpg" height="230" width="139" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item-product-price">
+                                            <span>300</span>    
+                                        </div>
+                                        <a href="#" class="item-product-order">Заказать</a>
+                                    </div>
+                                </div><!-- .item-product -->
+                                <div class="item-product classic">
+                                    <div class="item-product-zag">Мир воды</div>
+                                    <div class="item-product-content">
+                                        <span class="volume">18,9 л.</span>
+                                        <div class="item-product-img">
+                                            <a href="#">
+                                                <img src="images/product-main2.jpg" height="230" width="139" alt="">    
+                                            </a>
+                                        </div>
+                                        <div class="item-product-price">
+                                            <span>250</span>    
+                                        </div>
+                                        <a href="#" class="item-product-order">Заказать</a>
+                                    </div>
+                                </div><!-- .item-product -->
+                                <div class="item-product novelty">
+                                    <div class="item-product-zag">детский мир воды</div>
+                                    <div class="item-product-content">
+                                        <span class="volume">13 л.</span>
+                                        <div class="item-product-img">
+                                            <a href="#">
+                                                <img src="images/product-main3.jpg" height="230" width="139" alt="">    
+                                            </a>
+                                        </div>
+                                        <div class="item-product-price">
+                                            <span>150</span>
+                                        </div>
+                                        <a href="#" class="item-product-order">Заказать</a>
+                                    </div>
+                                </div><!-- .item-product -->
+                            </div><!-- .product-main -->
+                            <h2>Оборудование и аксессуары</h2>
+                            <div class="accessories">
+                                <div class="item-accessories">
+                                    <div class="item-accessories-zag">Кулеры напольные</div>
+                                    <div class="item-accessories-content">
+                                        <a href="#">
+                                            <img src="images/product-main4.jpg" height="260" width="104" alt="">    
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item-accessories">
+                                    <div class="item-accessories-zag">Кулеры настольные</div>
+                                    <div class="item-accessories-content">
+                                        <a href="#">
+                                            <img src="images/product-main5.jpg" height="257" width="114" alt="">    
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item-accessories">
+                                    <div class="item-accessories-zag">Аксессуары</div>
+                                    <div class="item-accessories-content">
+                                        <a href="#">
+                                            <img src="images/product-main6.jpg" height="252" width="188" alt="">    
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- .accessories -->
+                            <h2>Отзывы</h2>
+                            <div class="reviews">
+                                <div class="item-reviews">
+                                    <div class="item-reviews-zag">
+                                        <span>Рената</span>
+                                        компания ООО Вода
+                                    </div>
+                                    <div class="item-reviews-content">
+                                        <p>Читала я отзывы об этой воде, читала... И вот решила все-таки написать свой ибо видела я все это иначе. Я работаю в одной властной структуре, уполномоченной проводить проверки.</p>
+                                        <img src="images/blank.jpg" height="59" width="191" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-reviews">
+                                    <div class="item-reviews-zag">
+                                        <span>Василий</span>
+                                        компания ООО Вода
+                                    </div>
+                                    <div class="item-reviews-content">
+                                        <p>Читала я отзывы об этой воде, читала... И вот решила все-таки написать свой ибо видела я все это иначе. Я работаю в одной властной структуре, уполномоченной проводить проверки.</p>
+                                        <img src="images/blank.jpg" height="59" width="191" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-reviews">
+                                    <div class="item-reviews-zag">
+                                        <span>Петр</span>
+                                        компания ООО Вода
+                                    </div>
+                                    <div class="item-reviews-content">
+                                        <p>Читала я отзывы об этой воде, читала... И вот решила все-таки написать свой ибо видела я все это иначе. Я работаю в одной властной структуре, уполномоченной проводить проверки.</p>
+                                        <img src="images/blank.jpg" height="59" width="191" alt="">
+                                    </div>
+                                </div>
+                            </div><!-- .reviews -->
+                            <a class="vse-reviews" href="#">
+                                <img src="images/vse-reviews.png" height="38" width="134" alt="">
+                            </a>
+                        </div><!-- .main-content -->
+                    </main><!-- .content -->
+                </div><!-- .container-->
+
+                <aside class="right-sidebar">
+                    <div class="widget grafik">
+                        <div class="widget-zag">
+                            <span>График работы</span><br />
+                            центра приема заказов
+                        </div>
+                        <div class="widget-content">
+                            <div class="days">
+                                <p>пн - пт<br />
+                                    <span>08:00 - 21:00</span></p>
+                                <p class="clor">сб<br />
+                                    <span>09:30 - 18:30</span></p>
+                            </div>
+                            <div class="note">
+                                *Прием заказов на следующий день осуществляется до 17-ти часов.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-zag">каталог</div>
+                        <div class="widget-content">
+                            <ul>
+                                <li><a href="#">Питьевая вода</a></li>
+                                <li><a href="#">Кулеры настольные</a></li>
+                                <li><a href="#">Кулеры напольные</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- .Widget -->
+                    <div class="widget article-side">
+                        <div class="widget-zag">Это важно знать</div>
+                        <div class="widget-content">
+                            <div class="article-side-wrap">
+                                <p class="article-side-zag">Вода с первых дней жизни</p>
+                                <img src="images/artical-side.png" height="95" width="207" alt="">
+                                <p class="article-side-text">
+                                    <a href="#">Потребление чистой воды играет крайне важную роль в формировании и развитии детского организма...</a></p>
+                            </div>
+                            <div class="article-side-wrap">
+                                <p class="article-side-zag">Вода – это жизнь!</p>
+                                <img src="images/artical-side2.png" height="95" width="207" alt="">
+                                <p class="article-side-text">
+                                    <a href="#">Известно, что человек на 80% состоит из воды. Без этого компонента жизнь невозможна...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </aside><!-- .right-sidebar -->
+    
+            </div><!-- .middle-->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <nav class="menu-footer">
+                    <ul>
+                        <li><a href="#">главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">О воде</a></li>
+                        <li><a href="#">каталог</a></li>
+                        <li><a href="#">акции</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">это важно знать</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="name-site">доставка питьевой воды</div>
+                <div class="copy">Copyright © 2014 Мир Воды</div>
+                <div class="created">
+                    Дизайн сайта
+                    <a href="#">
+                        <img src="images/seadesign.png" height="18" width="74" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer><!-- .footer -->
+
+        <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script  type="text/javascript" src="js/plugins.js"></script>
+        <script  type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,489 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header">
+                <div class="wrap">
+                    <div class="head">
+                        <div class="logo">
+                            <a href="/"><img src="images/logo.png" height="97" width="272" alt="Логотип сайта"></a>
+                        </div>
+                        <div class="head-button">
+                            <a href="#">Хочу сюда</a>
+                        </div>
+                        <div class="head-desc">
+                            <p>
+                                <span>Портал  объявлений  и развлечений №1</span> 
+                                Объявления частных лиц и компаний о продаже товаров и услуг. Автомобили, недвижимость, одежда, электроника, техника, мебель, работа, животные и многое другое.
+                            </p> 
+                        </div>
+                    </div><!-- .head -->
+                </div><!-- .wrap -->
+                <div class="wrap-nav">
+                    <div class="nav-wrap">
+                        <nav class="main-menu-left">
+                            <ul>                              
+                                <li class="active"><a href="#">История компании</a></li>
+                                <li><a href="#">Реклама на сайте</a></li>
+                                <li><a href="#">Для прессы</a></li>
+                                <li><a href="#">Работа в компании</a></li>
+                                <li><a href="#">Помощь</a></li>
+                                <li><a href="#">Безопасность</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="main-menu-rigth">
+                            <ul>
+                                <li class="feedback-link"><a href="#">Обратная связь</a>
+                                    <div class="sub feedback-mamenu">
+                                        <div class="feedback-zag">Обратная связь</div>
+                                        <div class="feedback-content">
+                                            <form action="" method="">
+                                                <input type="text" name="name" placeholder="Как вас зовут?*">
+                                                <input type="text" name="email" placeholder="Ваш e-mail*">
+                                                <input type="text" name="phone" placeholder="Ваш номер телефона*">
+                                                <textarea name="text" id="" cols="30" rows="10" placeholder="Содержание письма"></textarea>
+                                                <input class="submit" type="submit" value="Отправить">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="personal-cab-link"><a href="#">Личный кабинет</a>
+                                    <div class="sub pers-cab">
+                                        <div class="pers-cab-zag">Личный кабинет</div>
+                                        <div class="pers-cab-content">
+                                            <a class="login" href="#">Войти</a>
+                                            <a class="reg" href="#">Зарегистроваться</a>
+                                            <a class="announcements" href="#">Мои обьявления</a>
+                                            <a class="portmone" href="#">Кошелек</a>
+                                            <a class="settings" href="#">Настройки</a>
+                                            <a class="rules" href="#">Правила</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="category-link"><a href="#">Категории</a>
+                                    <div class="sub" style="z-index: 5000">
+                                        <div class="cat-wrap-col">
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="avto" href="#">Транспорт</a></div>
+                                                <ul>
+                                                    <li><a href="#">Автомобили с пробегом</a></li>
+                                                    <li><a href="#">Новые автомобили</a></li>
+                                                    <li><a href="#">Мотоциклы и мототехника</a></li>
+                                                    <li><a href="#">Грузовики и спецтехника</a></li>
+                                                    <li><a href="#">Водный транспорт</a></li>
+                                                    <li><a href="#">Велосипеды</a></li>
+                                                    <li><a href="#">Воздушный транспорт</a></li>
+                                                    <li><a href="#">Запчасти и аксессуары</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="home" href="#">Недвижимость</a></div>
+                                                <ul>
+                                                    <li><a href="#">Квартиры</a></li>
+                                                    <li><a href="#">Комнаты</a></li>
+                                                    <li><a href="#">Дома, дачи, коттеджи</a></li>
+                                                    <li><a href="#">Земельные участки</a></li>
+                                                    <li><a href="#">Гаражи и машиноместа</a></li>
+                                                    <li><a href="#">Коммерческая недвижимость</a></li>
+                                                    <li><a href="#">Недвижимость за рубежом</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- .cat-wrap-col -->
+                                        <div class="cat-wrap-col">
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="work" href="#">Работа</a></div>
+                                                <ul>
+                                                    <li><a href="#">Вакансии</a></li>
+                                                    <li><a href="#">Резюме</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="service" href="#">Услуги</a></div>
+                                                <ul>
+                                                    <li><a href="#">Предложения услуг</a></li>
+                                                    <li><a href="#">Потребность в услугах</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="personal" href="#">Личные вещи</a></div>
+                                                <ul>
+                                                    <li><a href="#">Одежда, обувь, аксессуары</a></li>
+                                                    <li><a href="#">Детская одежда и обувь</a></li>
+                                                    <li><a href="#">Товары для детей и игрушки</a></li>
+                                                    <li><a href="#">Часы и украшения</a></li>
+                                                    <li><a href="#">Красота и здоровье</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="bizness" href="#">Для бизнеса</a></div>
+                                                <ul>
+                                                    <li><a href="#">Готовый бизнес</a></li>
+                                                    <li><a href="#">Оборудование для бизнеса</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- .cat-wrap-col -->
+                                        <div class="cat-wrap-col">
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="for-home" href="#">Для дома и дачи</a></div>
+                                                <ul>
+                                                    <li><a href="#">Бытовая техника</a></li>
+                                                    <li><a href="#">Мебель и интерьер</a></li>
+                                                    <li><a href="#">Посуда и товары для кухни</a></li>
+                                                    <li><a href="#">Продукты питания</a></li>
+                                                    <li><a href="#">Ремонт и строительство</a></li>
+                                                    <li><a href="#">Растения</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="elect" href="#">Бытовая электроника</a></div>
+                                                <ul>
+                                                    <li><a href="#">Бытовая электроника</a></li>
+                                                    <li><a href="#">Аудио и видео</a></li>
+                                                    <li><a href="#">Игры, приставки и программы</a></li>
+                                                    <li><a href="#">Настольные компьютеры</a></li>
+                                                    <li><a href="#">Ноутбуки</a></li>
+                                                    <li><a href="#">Оргтехника и расходники</a></li>
+                                                    <li><a href="#">Планшеты и электронные книги</a></li>
+                                                    <li><a href="#">Телефоны</a></li>
+                                                    <li><a href="#">Товары для компьютера</a></li>
+                                                    <li><a href="#">Фототехника</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- .cat-wrap-col -->
+                                        <div class="cat-wrap-col">
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="rest" href="#">Отдых и развлечения</a></div>
+                                                <ul>
+                                                    <li><a href="#">Билеты и путешествия</a></li>
+                                                    <li><a href="#">Велосипеды</a></li>
+                                                    <li><a href="#">Книги и журналы</a></li>
+                                                    <li><a href="#">Коллекционирование</a></li>
+                                                    <li><a href="#">Музыкальные инструменты</a></li>
+                                                    <li><a href="#">Охота и рыбалка</a></li>
+                                                    <li><a href="#">Спорт и отдых</a></li>
+                                                    <li><a href="#">Знакомства</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cat-wrap">
+                                                <div class="cat-zag"><a class="animal" href="#">Животные</a></div>
+                                                <ul>
+                                                    <li><a href="#">Собаки</a></li>
+                                                    <li><a href="#">Кошки</a></li>
+                                                    <li><a href="#">Птицы</a></li>
+                                                    <li><a href="#">Аквариум</a></li>
+                                                    <li><a href="#">Другие животные</a></li>
+                                                    <li><a href="#">Товары для животных</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- .cat-wrap-col -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- .wrap -->
+                </div>
+            </header><!-- .header-->
+
+            <main class="content">
+                <div class="slider-wrap">
+                    <div class="nav-wrap">
+                        <ul class="bxslider">
+                            <li>
+                                <div class="slide-desc">
+                                    <div class="slide-zag">
+                                        <p>
+                                            <span>Уникальное</span>
+                                            Рекламное предложение
+                                        </p>
+                                    </div>
+                                    <a href="#">Подробнее</a>
+                                </div>
+                                <img src="images/slide1.jpg" height="246" width="1082">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="wrap-map">
+                        <div class="map">
+                            <img src="images/map.jpg" height="344" width="659" alt="">
+                        </div>
+                        <div class="wrap-town">
+                            <div class="town-zag">
+                                Выберите свой город
+                            </div>
+                            <div class="town">
+                                <div class="town-col">
+                                    <ul>
+                                        <li class="active"><a href="">Москва</a></li>
+                                        <li><a href="#">Санкт-Петербург</a></li>
+                                        <li><a href="#">Новосибирск</a></li>
+                                        <li><a href="#">Екатеринбург</a></li>
+                                        <li><a href="#">Нижний Новгород</a></li>
+                                        <li><a href="#">Казань</a></li>
+                                        <li><a href="#">Самара</a></li>
+                                        <li><a href="#">Омск</a></li>
+                                    </ul>    
+                                </div>
+                                <div class="town-col">
+                                    <ul>
+                                        <li><a href="#">Челябинск</a></li>
+                                        <li><a href="#">Ростов-на-Дону</a></li>
+                                        <li><a href="#">Уфа</a></li>
+                                        <li><a href="#">Волгоград</a></li>
+                                        <li><a href="#">Красноярск</a></li>
+                                        <li><a href="#">Пермь</a></li>
+                                        <li><a href="#">Воронеж</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .wrap-map -->
+                    <div class="about">
+                        <div class="about-img">
+                            <img src="images/img1.png" height="166" width="168" alt="" title="">
+                        </div>
+                        <div class="about-text">
+                            <p><strong>Компания iCLiK.ru</strong> — это крупнейший сайт объявлений. Каждый день заходя на портал вы можете продать или купить практически всё, что пожелаете. Объявления от частных лиц и компаний, поэтому на iclik можно купить подержанные и новые товары по привлекательной цене.
+                            </p>
+                            <p class="colred">Миссия компани iCLiK.ru — выполнять функции портала для объединения продавцов и покупателей. Сотрудничать с нами </p>
+                        </div>
+                    </div><!-- .about -->
+                    <div class="privileges">
+                        <div class="privilege">
+                            <p><span>Удобно</span>
+                            контактируя только с одним или несколькими продавцами, вы получаете широкий выбор товаров и услуг по привлекательным ценам!</p>
+                        </div>
+                        <div class="privilege">
+                            <p><span>Просто</span>
+                            от вас требуется всего лишь зайти на сайт найти или подать объявлениео товарах или услугах, решение всех дальнейших задач мы берем на себя. </p>
+                        </div>
+                        <div class="privilege">
+                            <p><span>Выгодно</span>
+                            мы экономим время и средства наших клиентов на проведении работ по продвижению ваших товаров и услуг.</p>
+                        </div>
+                    </div><!-- .privileges -->
+                    <div class="privileges-vert">
+                        <div class="privilege-vert-img">
+                            <img src="images/priv4.png" height="107" width="159" alt="">
+                        </div>
+                        <div class="privilege-vert-text">
+                            Также на сайте iCLiK.ru предоставлена возможность воспользоваться следующими видами услуг, а именно:<br />
+                            <a href="#">игры онлайн,</a> <a href="#">авиабилеты и жд билеты онлайн,</a> <a href="#">бронирование отелей онлайн,</a> <a href="#">книги онлайн,</a> <a href="#">аренда и съем недвижимости онлайн,</a> <a href="#">аукционы онлайн.</a>
+                        </div>
+                    </div><!-- .privileges-vert -->
+                    <div class="privileges-vert">
+                        <div class="privilege-vert-img">
+                            <img src="images/priv5.png" height="107" width="159" alt="">
+                        </div>
+                        <div class="privilege-vert-text">
+                            Вы имеете возможность приобрести редкую вещь или получить что-то по самой выгодной цене. Подборка тематических разделов бесплатных объявлений на нашем ресурсе состоит из максимального числа отраслей и областей деятельности. На доске бесплатных объявлений iCLiK.ru продают и покупают самые разные товары. Квартиры, гаражи, земельные участки, дачи, автомобили, бытовая техника, мебель, электроника, компьютеры, фотоаппараты, телефоны, обувь , одежда, музыкальные инструменты, услуги и многое другое. Также на iCLiK.ru можно оставить свое резюме или найти новую работу.
+                        </div>
+                    </div><!-- .privileges-vert -->
+                    <div class="privileges-vert">
+                        <div class="privilege-vert-img">
+                            <img src="images/priv6.png" height="107" width="159" alt="">
+                        </div>
+                        <div class="privilege-vert-text">
+                            iCLiK.ru подать бесплатное объявление в интернете стало проще простого. Вам потребуется всего пара минут! Выберите категорию товара и город, напишите заголовок и текст объявления, укажите цену товара и свой e-mail или телефон. Добавьте несколько фотографий — они помогут быстрее продать Ваш товар. Благодаря ресурсу iCLiK.ru Вы имеете возможность приобрести редкую вещь или получить что-то по самой выгодной цене. Подборка тематических разделов бесплатных объявлений на нашем ресурсе состоит из максимального числа отраслей и областей деятельности.Подать объявление на нашем ресурсе может каждый зарегистрировавшийся пользователь Желаем выгодных покупок и успешных продаж!
+                        </div>
+                    </div><!-- .privileges-vert -->
+                    <div class="all-area">
+                        <div class="area-col">
+                            <ul>
+                                <li><a href="#">Адыгея</a></li>
+                                <li><a href="#">Алтай</a></li>
+                                <li><a href="#">Архангельская обл.</a></li>
+                                <li><a href="#">Амурская область</a></li>
+                                <li><a href="#">Астраханская обл.</a></li>
+                                <li><a href="#">Башкортостан</a></li>
+                                <li><a href="#">Белгородская обл.</a></li>
+                                <li><a href="#">Брянская обл.</a></li>
+                                <li><a href="#">Бурятия</a></li>
+                                <li><a href="#">Владимирская обл.</a></li>
+                                <li><a href="#">Волгоградская обл.</a></li>
+                                <li><a href="#">Вологодская обл.</a></li>
+                                <li><a href="#">Воронежская обл.</a></li>
+                                <li><a href="#">Дагестан</a></li>
+                                <li><a href="#">Ивановская обл.</a></li>
+                                <li><a href="#">Ингушетия</a></li>
+                            </ul>    
+                        </div>
+                        <div class="area-col">
+                            <ul>
+                                <li><a href="#">Калининградская обл.</a></li>
+                                <li><a href="#">Калмыкия</a></li>
+                                <li><a href="#">Калужская обл.</a></li>
+                                <li><a href="#">Карачаево-Черкесия</a></li>
+                                <li><a href="#">Карелия</a></li>
+                                <li><a href="#">Кировская обл.</a></li>
+                                <li><a href="#">Коми</a></li>
+                                <li><a href="#">Костромская обл.</a></li>
+                                <li><a href="#">Краснодарский край</a></li>
+                                <li><a href="#">Красноярский край</a></li>
+                                <li><a href="#">Крым</a></li>
+                                <li><a href="#">Курганская обл.</a></li>
+                                <li><a href="#">Курская обл.</a></li>
+                                <li><a href="#">Ленинградская обл.</a></li>
+                                <li><a href="#">Липецкая обл.</a></li>
+                                <li><a href="#">Марий Эл</a></li>
+                            </ul>    
+                        </div>
+                        <div class="area-col">
+                            <ul>
+                                <li><a href="#">Сахалинская область</a></li>
+                                <li><a href="#">Тамбовская обл.</a></li>
+                                <li><a href="#">Татарстан</a></li>
+                                <li><a href="#">Тверская обл.</a></li>
+                                <li><a href="#">Томская обл.</a></li>
+                                <li><a href="#">Тульская обл.</a></li>
+                                <li><a href="#">Тыва</a></li>
+                                <li><a href="#">Тюменская обл.</a></li>
+                                <li><a href="#">Удмуртия</a></li>
+                                <li><a href="#">Ульяновская обл.</a></li>
+                                <li><a href="#">Хакасия</a></li>
+                                <li><a href="#">Хабаровский край</a></li>
+                                <li><a href="#">Челябинская обл.</a></li>
+                                <li><a href="#">Чеченская республика</a></li>
+                                <li><a href="#">Читинская область</a></li>
+                                <li><a href="#">Чувашия</a></li>
+                            </ul>    
+                        </div>
+                        <div class="area-col">
+                            <ul>
+                                <li><a href="#">Ненецкий АО</a></li>
+                                <li><a href="#">Нижегородская обл.</a></li>
+                                <li><a href="#">Новгородская обл.</a></li>
+                                <li><a href="#">Новосибирская область</a></li>
+                                <li><a href="#">Омская область</a></li>
+                                <li><a href="#">Оренбургская обл.</a></li>
+                                <li><a href="#">Орловская обл.</a></li>
+                                <li><a href="#">Пензенская обл.</a></li>
+                                <li><a href="#">Пермский край</a></li>
+                                <li><a href="#">Приморский край</a></li>
+                                <li><a href="#">Псковская обл.</a></li>
+                                <li><a href="#">Республика (Саха) Якутия</a></li>
+                                <li><a href="#">Ростовская обл.</a></li>
+                                <li><a href="#">Рязанская обл.</a></li>
+                                <li><a href="#">Самарская обл.</a></li>
+                                <li><a href="#">Саратовская обл.</a></li>
+                            </ul>    
+                        </div>
+                        <div class="area-col">
+                            <ul>
+                                <li><a href="#">Ненецкий АО</a></li>
+                                <li><a href="#">Нижегородская обл.</a></li>
+                                <li><a href="#">Новгородская обл.</a></li>
+                                <li><a href="#">Новосибирская область</a></li>
+                                <li><a href="#">Омская область</a></li>
+                                <li><a href="#">Оренбургская обл.</a></li>
+                                <li><a href="#">Орловская обл.</a></li>
+                                <li><a href="#">Пензенская обл.</a></li>
+                                <li><a href="#">Пермский край</a></li>
+                                <li><a href="#">Приморский край</a></li>
+                                <li><a href="#">Псковская обл.</a></li>
+                                <li><a href="#">Республика (Саха) Якутия</a></li>
+                                <li><a href="#">Ростовская обл.</a></li>
+                                <li><a href="#">Рязанская обл.</a></li>
+                                <li><a href="#">Самарская обл.</a></li>
+                                <li><a href="#">Саратовская обл.</a></li>
+                            </ul>    
+                        </div>
+                    </div>
+                </div><!-- .wrap -->
+            </main><!-- .content -->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="wrap-footer-nav">
+                <div class="wrap">
+                    <nav class="footer-menu-left">
+                        <ul>                              
+                            <li class="active"><a href="#">История компании</a></li>
+                            <li><a href="#">Реклама на сайте</a></li>
+                            <li><a href="#">Для прессы</a></li>
+                            <li><a href="#">Работа в компании</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Безопасность</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-menu-rigth">
+                        <ul>
+                            <li class="feedback-link"><a href="#">Обратная связь</a></li>
+                            <li class="category-link"><a href="#">Выйти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!-- .wrap-footer-nav -->
+            <div class="wrap-footer">
+                <div class="wrap">
+                    <div class="copy">
+                        © 2014 i Clik.ru   сайт объявлений
+                    </div>
+                    <div class="conter">
+                        <a href="#">
+                            <img src="images/counter.png" height="25" width="26">
+                        </a>
+                    </div>
+                    <div class="created">
+                        <a href="#"><img src="images/created.png" height="26" width="75" alt=""></a>
+                    </div>
+                </div>
+            </div><!-- .wrap-footer -->
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

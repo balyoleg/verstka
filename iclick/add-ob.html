@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+        <!--#set var="less" value="" -->
+            <!--#if expr="$QUERY_STRING = /less=([a-zA-Z0-9]+)/" -->
+            <!--#set var="less" value="$1" -->
+            <!--#endif -->
+
+            <!--#if expr="$less" -->
+
+            <!-- LESS -->   
+            <link rel="stylesheet/less" type="text/css" href="css/main.less?v=1">
+            <!--
+            <script type="text/javascript">
+                less = {
+                    env: "development", // or "production"
+                    async: false,       // load imports async
+                    fileAsync: false,   // load imports async when in a page under
+                                        // a file protocol
+                    poll: 1000,         // when in watch mode, time in ms between polls
+                    functions: {},      // user functions, keyed by name
+                    dumpLineNumbers: "all" // or "mediaQuery" or "all"
+                };
+            </script>
+          -->
+            <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+
+        <!--#else -->
+
+            <!-- no LESS --> 
+            <link rel="stylesheet" type="text/css" href="css/main.css?v=1">
+
+        <!--#endif -->
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+            <header class="header auth">
+                <div class="head-auth">
+                    <div class="wrap">
+                        <div class="cont-ob">
+                            <p>На сайте 27 355 711 объявлений</p>
+                        </div>
+                        <div class="logo-auth">
+                            <a href="/">
+                                <img src="img/logo-auth.png" height="63" width="174" alt="">
+                            </a>
+                        </div>
+                        <div class="block-links">
+                            <a class="advertising" href="#">Реклама на сайте</a>
+                            <a class="help" href="#">Помощь</a>
+                        </div>
+                        
+                        <div class="main-menu">
+                            <ul>
+                                <li><a class="personal-cab" href="#">Личный кабинет</a></li>
+                                <li><a class="favorites" href="#">Избранное</a></li>
+                                <li><a class="open-shop" href="#">Открой свой магазин</a></li>
+                                <li><a class="add-advertisement" href="#">Подать обьявление</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- .wrap -->    
+                </div><!-- .head-auth -->
+                <div class="wrap-nav-auth">
+                    
+                    <div class="nav-wrap ">
+                        <div class="left-menu">
+                            <ul>
+                                <li><a class="shop-main" href="#">
+                                        <img src="img/telechka.png" height="17" width="17" alt="">
+                                        Магазины
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="my-obya" href="#">
+                                        <img src="img/radaktirov.png" height="15" width="15" alt="">
+                                        Мои обьявления
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/games.png" height="18" width="19" alt="">
+                                        Играй онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/tickets.png" height="20" width="23" alt="">
+                                        Билеты онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/read.png" height="23" width="25" alt="">
+                                        Читай онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/ndvighim.png" alt="">
+                                        Сдавай-Снимай недвижимость онлайн
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/auktion.png" height="20" width="29" alt="">
+                                        Аукцион онлайн
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                     
+                    </div><!-- .nav-wrap -->
+                </div>
+            </header><!-- .header-->
+
+            <main class="content">
+                <div class="wrap">
+                    <div class="add-ob">
+                        <h1>Подать обьявление</h1>
+                        <div class="information">
+                            Перед добавлением на сайт, каждое объявление проверяется модератором на соответствие всем нормам и <a href="#">правилам iCliK.RU</a>
+                        </div>
+                        <div class="wrap-add-ob">
+                            <div class="wrap-form-add">
+                                <form action="" method="post">
+                                    <div class="djform_row">
+                                        <label class="label">Ваше имя</label>
+                                        <div class="djform_field">
+                                            Дина  <a class="edit" href="#">изменить имя</a>
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label class="label">Электронная почта</label>
+                                        <div class="djform_field">
+                                            dinazainer@gmail.com     <a class="edit" href="#">изменить e-mail</a>
+                                            <div class="chek">
+                                                <input type="checkbox" name="" checked /> Я не хочу получать вопросы по объявлению по e-mail
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label class="label">Телефон</label>
+                                        <div class="djform_field">
+                                            <select name="" id="">
+                                                <option value="">+7 982 913 99 99</option>
+                                                <option value="">+7 982 913 99 00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label for="" class="label">Город</label>
+                                        <div class="djform_field">
+                                            <input type="text" name="town" />
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label for="" class="label">Категория</label>
+                                        <div class="djform_field">
+                                            <select name="" id="">
+                                                <option value="">Транспорт</option>
+                                                <option value="">Недвижимость</option>
+                                                <option value="">Работа</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label for="" class="label">Название обьявления</label>
+                                        <div class="djform_field">
+                                            <input type="text" name="" />
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label for="" class="label">Описание обьявления</label>
+                                        <div class="djform_field">
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label for="" class="label">Цена</label>
+                                        <div class="djform_field">
+                                            <input type="text" name="price"> руб.
+                                            <div class="ok">Правильно указывайте цену</div>
+                                        </div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label for="" class="label">
+                                            Фото
+                                            <span>Вы можете загрузить не более 5 фотографий</span>  
+                                        </label>
+                                        <div class="djform_field"></div>
+                                    </div>
+                                    <div class="djform_row">
+                                        <label for="" class="label">Пакет размещения</label>
+                                        <div class="djform_field"></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="right-info-block">
+                                <div class="widget rules-in-site">
+                                    <div class="widget-zag">Правила iClick.ru</div>
+                                    <div class="widget-content">
+                                        <ul>
+                                            <li>Не подавайте одно и то же объявление повторно. <a href="#">Почему?</a></li>
+                                            <li>Не указывайте телефон, e-mail или адрес сайта в описании или на фото</li>
+                                            <li>Не пишите цену в названии — для этого есть отдельное поле</li>
+                                            <li>Не предлагайте <a href="#">запрещённые товары и услуги</a></li>
+                                            <li><a href="#">Подробнее о наших правилах</a></li>
+                                        </ul>
+                                    </div><!-- .rules-site-content -->
+                                </div><!-- .rules-in-site -->
+                                <div class="widget fast">
+                                    <div class="widget-zag">Как совершить сделку быстрее?</div>
+                                    <div class="widget-content">
+                                        <ul>
+                                            <li>Указывайте разумную цену — такие объявления гораздо эффективнее. <a href="">Как это?</a></li>
+                                            <li>Добавьте фотографии — хорошие фото привлекают больше внимания</li>
+                                            <li>Подробно опишите товар — это поможет нашим пользователям</li>
+                                            <li>Выберите пакет Турбо-продажа или Быстрая продажа</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- .right-info-block -->
+                        </div>
+                    </div>
+                </div>
+                
+            </main><!-- .content -->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div class="wrap-footer-nav">
+                <div class="wrap">
+                    <nav class="footer-menu-left">
+                        <ul>                              
+                            <li class="active"><a href="#">История компании</a></li>
+                            <li><a href="#">Реклама на сайте</a></li>
+                            <li><a href="#">Для прессы</a></li>
+                            <li><a href="#">Работа в компании</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Безопасность</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-menu-rigth">
+                        <ul>
+                            <li class="feedback-link"><a href="#">Обратная связь</a></li>
+                            <li class="category-link"><a href="#">Выйти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!-- .wrap-footer-nav -->
+            <div class="wrap-footer">
+                <div class="wrap">
+                    <div class="copy">
+                        © 2014 i Clik.ru   сайт объявлений
+                    </div>
+                    <div class="conter">
+                        <a href="#">
+                            <img src="img/counter.png" height="25" width="26">
+                        </a>
+                    </div>
+                    <div class="created">
+                        <a href="#"><img src="img/created.png" height="26" width="75" alt=""></a>
+                    </div>
+                </div>
+            </div><!-- .wrap-footer -->
+        </footer><!-- .footer -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
